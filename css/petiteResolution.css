@@ -1,0 +1,1210 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+body{
+
+}
+
+div#buttonBox{
+	display: flex;
+	background: #525E65;
+	width: 100%;
+	height: 7vh;
+	margin-top: -2.4vh;
+	position: fixed;
+	z-index: 10!important;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+div.headerBoxShadow {
+	box-shadow: 0px 0px 10px black;
+}
+
+a.button{
+	font-size: 2.5vh;
+	font-weight: bold;
+	text-decoration: none;
+	color: #DBE8D4;
+	margin-left: 2vh;
+	margin-right: 2vh;
+}
+
+a.button{
+	text-decoration: none;
+	background: linear-gradient(to top, #72C9A6, #72C9A6 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+	transition: background-size 0.5s;
+}
+
+a.button:hover {
+	color: #72C9A6;
+	background-size: 100% 100%;
+}
+
+/*a.button:hover{
+	color: #72C9A6;
+	transition-duration: 0.8s;
+}*/
+
+header{
+/*	background-color: #2E3445;*/
+	display: flex;
+	width: 100%;
+	height: 20vh;
+	margin-top: 5vw;
+	justify-content: center;
+	align-items: center;
+
+}
+
+img.backgroundHeader{
+	z-index: 0;
+	height: 20vh;
+	width: 100%;
+	margin-top: 5vw;
+	object-fit: cover;
+	position: absolute;
+	background-repeat: no-repeat;
+	filter: drop-shadow(0vh 1px 200vh rgba(255, 255, 255, 0.1));
+	clip-path: inset(-0% -100% -100% -100%);
+}
+
+/*début de l'animation bienvenue*/
+
+div.content{
+	position: relative;
+}
+
+div.content h2{
+	position: absolute;
+	color: #fff;
+	margin-top: 1.5vh;
+	transform: translate(-50%, -50%);
+	font-size: 5.3vh;
+	user-select: none;
+}
+
+div.content h2:nth-child(1){
+	color: transparent;
+	-webkit-text-stroke: 2px #525E65 ;
+}
+
+div.content h2:nth-child(2){
+	color: #A8B4A8 ;
+	animation: animate 3.8s ease-in-out infinite;
+}
+
+@keyframes animate{
+	0%,100%
+	{
+		clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+	}
+	50%
+	{
+		clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+	}
+}
+
+
+/*fin de l'animation de bienvenue*/
+
+div#MainBox{
+	display: flex;
+	width: 100%;
+	height: 570vh;
+	margin-top: -0vh;
+}
+
+canvas#cnv{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -2;
+}
+
+/*début animation orbite lune profil*/
+
+.solarBox{
+	display: flex;
+	align-items: center;
+	margin-top: -0vh;
+	width: 40vh;
+	height: 40vh;
+	background-color: transparent;
+}
+
+.space{
+	width: 16.077708926477975vh;
+	height: 16.077708926477975vh;
+	margin: 26.79618154412996vh auto;
+	position: relative;
+	padding: 5.359236308825992vh;
+}
+
+.Profil{
+	position: relative;
+	left: 50%; top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	background: url(../img/mercure3.png);
+	opacity: 0.9;
+	width: 21.436945235303966vh; height: 21.436945235303966vh;
+	background-size: cover;
+}
+
+.Sat{
+	width: 6.69904538603249vh;
+	height: 6.69904538603249vh;
+	border-radius: 50%;
+	background: #525e65;
+	position: absolute;
+	transform: rotate(-45deg);
+	top: 0; left: 0;
+	/*box-shadow: 20px 20px 10px 2px #000;*/
+	animation: orbit 10s infinite;
+}
+
+@keyframes orbit{
+	50%{
+		left: calc(80%);
+		top: calc(90%);
+	}
+	100%{
+		z-index: -1;
+	}
+}
+
+/*fin de l'animation du satellite de profil*/
+
+div.introTheoDiv{
+	display: flex;
+	margin-top: 2vh;
+	width: 88%;
+	height: 53vh;
+	text-align: justify;
+	background-color: transparent;
+}
+
+p.introTheoText{
+	color: #DBE8D4;
+	font-size: 2.6vh;
+}
+
+/*début projectBox*/
+
+div.projectBox{
+	display: flex;
+	flex-direction: column;
+	margin-top: 15vh;
+	width: 100%;
+	height: 120vh;
+	align-items: center;
+/*	background-color: hotpink;*/
+}
+
+h1.projectTitle{
+	margin-top: 1vh;
+	color: #DBE8D4;
+	font-size: 5vh;
+}
+
+hr.projetUnderline{
+	margin-top: 3vh;
+	width: 40vh;
+	height: 0.3vh;
+	border: none;
+	background-color: #525E65;
+}
+
+p.projectDescri{
+	margin-top: 4vh;
+	color: #485E81;
+	text-align: center;
+	width: 40vh;
+	font-size: 2.2vh;
+}
+
+div.projectLogoBox{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	margin-top: 12vh;
+	width: 100%;
+	height: 120vw;
+/*	background-color: green;*/
+}
+
+.projectTopBox{
+	display: flex;
+	width: 100%;
+	height: 50%;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: row;
+/*	background-color: pink;*/
+}
+
+.projectBottomBox{
+	display: flex;
+	width: 100%;
+	height: 50%;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: row;
+/*	background-color: brown;*/
+}
+
+/*début lth déroul button*/
+
+div.lthBox{
+	display: flex;
+	flex-direction: column;
+	width: 20vh;
+	height: 20vh;
+/*	background-color: brown;*/
+}
+
+img.lthLogo{
+	display: flex;
+	width: 20vh;
+	height: 20vh;
+}
+
+a.lthButton{
+	z-index: 1;
+}
+
+.dropdownLth{
+	display: none;
+	max-width: 27.359781121751027vh;
+	height: 8.618331053351573vh;
+	border-radius: 0.683vh;
+	margin-top: -2vh;
+	background-color: transparent;
+	transition: height 0.2s ease-in-out;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.bloc-top-lth{
+	padding: 2.735978112175103vh;
+	display: block;
+	width: 100%;
+	border: none;
+	outline: none;
+	font-size: 2.735978112175103vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	color: white;
+	cursor: pointer;
+	border-radius: 0.683vh;
+	clip-path: polygon(30% 0%, 70% 0%, 70% 100%, 30% 100%);
+}
+
+img.arrowLth{
+	margin-top: -3.5vh;
+	width: 10vh;
+	border-radius: 50%;
+}
+
+.bloc-links-lth{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	margin-left: 1vh;
+	margin-right: 1vh;
+}
+
+p.lthDescri{
+	margin-top: 0vh;
+	margin-bottom: 1vh;
+	color: white;
+	font-size: 2.1vh;
+}
+
+a.lthDescriRedirect{
+	display: flex;
+	font-size: 2.6vh;
+	font-weight: bold;
+	text-decoration: none;
+	color: #242936;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	background-color: #DBE8D4;
+	border-radius: 0.5vh;
+	margin-bottom: 1vh;
+	width: 18vh;
+	height: 5vh;
+}
+
+a.lthDescriRedirect:hover{
+	transition-duration: 600ms;
+	background-color: #72C9A6;
+}
+
+/*fin lth déroul button*/
+
+
+/*début AKB déroul button*/
+
+
+div.AKBBox{
+	display: flex;
+	flex-direction: column;
+	width: 20vh;
+	height: 20vh;
+/*	background-color: brown;*/
+}
+
+img.AKBLogo{
+	display: flex;
+	z-index: -6;
+	width: 19.99vh;
+	height: 19.99vh;
+	border-radius: 50%;
+	border: solid 0.1vh orange;
+}
+
+a.AKBButton{
+	z-index: 7;
+}
+
+.dropdownAkb{
+	display: none;
+	max-width: 27.359781121751027vh;
+	height: 8.618331053351573vh;
+	border-radius: 0.683vh;
+	margin-top: -2vh;
+	background-color: transparent;
+	transition: height 0.2s ease-in-out;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.bloc-top-akb{
+	padding: 2.735978112175103vh;
+	display: block;
+	width: 100%;
+	border: none;
+	outline: none;
+	font-size: 2.735978112175103vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	color: white;
+	cursor: pointer;
+	border-radius: 0.683vh;
+	clip-path: polygon(30% 0%, 70% 0%, 70% 100%, 30% 100%);
+}
+
+img.arrowAkb{
+	margin-top: -3.5vh;
+	width: 10vh;
+	border-radius: 50%;
+}
+
+.bloc-links-akb{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	margin-left: 1vh;
+	margin-right: 1vh;
+}
+
+p.akbDescri{
+	margin-top: 0vh;
+	margin-bottom: 1vh;
+	color: white;
+	font-size: 2.1vh;
+}
+
+a.akbDescriRedirect{
+	display: flex;
+	font-weight: bold;
+	font-size: 2.6vh;
+	text-decoration: none;
+	color: #242936;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	background-color: #DBE8D4;
+	border-radius: 0.5vh;
+	margin-bottom: 1vh;
+	width: 18vh;
+	height: 5vh;
+}
+
+a.akbDescriRedirect:hover{
+	transition-duration: 600ms;
+	background-color: #72C9A6;
+}
+
+
+/*fin AKB déroul button*/
+
+
+/*début jarod déroul button*/
+
+div.JarodBox{
+	display: flex;
+	flex-direction: column;
+	width: 20vh;
+	height: 20vh;
+/*	background-color: brown;*/
+}
+
+img.JarodLogo{
+	display: flex;
+	width: 20vh;
+	height: 20vh;
+}
+
+a.JarodButton{
+	z-index: 1;
+}
+
+.dropdownJarod{
+	display: none;
+	max-width: 27.359781121751027vh;
+	height: 8.618331053351573vh;
+	border-radius: 0.683vh;
+	margin-top: -2vh;
+	background-color: transparent;
+	transition: height 0.2s ease-in-out;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.bloc-top-jarod{
+	padding: 2.735978112175103vh;
+	display: block;
+	width: 100%;
+	border: none;
+	outline: none;
+	font-size: 2.735978112175103vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	color: white;
+	cursor: pointer;
+	border-radius: 0.683vh;
+	clip-path: polygon(30% 0%, 70% 0%, 70% 100%, 30% 100%);
+}
+
+img.arrowJarod{
+	margin-top: -3.5vh;
+	width: 10vh;
+	border-radius: 50%;
+}
+
+.bloc-links-jarod{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	margin-left: 1vh;
+	margin-right: 1vh;
+}
+
+p.jarodDescri{
+	margin-top: 0vh;
+	margin-bottom: 1vh;
+	color: white;
+	font-size: 2.1vh;
+}
+
+a.jarodDescriRedirect{
+	display: flex;
+	font-size: 2.6vh;
+	font-weight: bold;
+	text-decoration: none;
+	color: #242936;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	background-color: #DBE8D4;
+	border-radius: 0.5vh;
+	margin-bottom: 1vh;
+	width: 18vh;
+	height: 5vh;
+}
+
+a.jarodDescriRedirect:hover{
+	transition-duration: 600ms;
+	background-color: #72C9A6;
+}
+
+/*fin lth déroul button*/
+
+
+/*fin projectBox*/
+
+
+/*début internship Box*/
+
+div#internBox{
+	display: flex;
+	flex-direction: column;
+	margin-top: -25vh;
+	width: 100%;
+	height: 350vh;
+	align-items: center;
+/*	background-color: hotpink;*/
+}
+
+h1.internTitle{
+	margin-top: 1vh;
+	color: #DBE8D4;
+	font-size: 5vh;
+}
+
+hr.internUnderline{
+	margin-top: 3vh;
+	width: 40vh;
+	height: 0.3vh;
+	border: none;
+	background-color: #525E65;
+}
+
+p.internDescri{
+	text-align: center;
+	margin-top: 4vh;
+	color: #485E81;
+	font-size: 2.2vh;
+}
+
+/*début traxens intern box*/
+
+div.traxensInternBox{
+	display: flex;
+	flex-direction: column;
+	margin-top: 10vh;
+	width: 40vh;
+	height: 70vh;
+	border-radius: 0.7vh;
+	background-color: #72C9A6;
+}
+
+div.traxensLogoBox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 35%;
+	width: 100%;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	border-top-left-radius: 0.35vh;
+	border-top-right-radius: 0.35vh;
+	border-bottom-left-radius: 0vh;
+	border-bottom-right-radius: 0vh;
+	background-color: #DBE8D4;
+}
+
+a.traxensButtonLogo{
+
+}
+
+img.traxensLogo{
+	display: flex;
+	width: 18vh;
+	height: 20vh;
+	margin-left: 0vh;
+}
+
+img.traxensLogo:hover{
+	rotate: 30deg;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+img.traxensLogo::after{
+	rotate: 0deg;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+div.traxensDescriBox{
+	display: flex;
+	flex-direction: column;
+	height: 65%;
+	width: 100%;
+	border-top-left-radius: 0vh;
+	border-top-right-radius: 0vh;
+	border-bottom-right-radius: 0.35vh;
+	border-bottom-left-radius: 0.35vh;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	background-color: #525E65;
+}
+
+p.titleCompanyTraxens{
+	margin-top: 5vh;
+	text-align: center;
+	margin-left: 0vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+
+}
+
+span.titleCompanyTraxensUnderline{
+	text-decoration: underline;
+}
+
+p.titleDurationTraxens{
+	margin-top: 1.5vh;
+	margin-left: 0vh;
+	text-align: center;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+span.titleDurationTraxensUnderline{
+	text-decoration: underline;
+}
+
+p.titleMissionsTraxens{
+	margin-top: 1.5vh;
+	margin-left: 0vh;
+	text-align: center;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+	text-decoration: underline;
+}
+
+p.missionsTraxensDescri{
+	margin-top: 1.5vh;
+	margin-left: 0vh;
+	margin-right: 3vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+p.traxensDescri1{
+	text-align: center;
+	margin-top: 0.1vh;
+	margin-left: 0vh;
+	margin-right: 0vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+p.traxensDescri2{
+	text-align: center;
+	margin-top: 0.1vh;
+	margin-left: 0vh;
+	margin-right: 0vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+p.traxensDescri3{
+	text-align: center;
+	margin-top: 0.1vh;
+	margin-left: 0vh;
+	margin-right: 0vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+p.traxensDescri4{
+	text-align: center;
+	margin-top: 0.1vh;
+	margin-left: 0vh;
+	margin-right: 0vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+/*fin traxens intern box*/
+
+
+/*début alcineo intern box*/
+
+div.alcineoInternBox{
+	display: flex;
+	flex-direction: column;
+	margin-top: 10vh;
+	width: 40vh;
+	height: 70vh;
+	border-radius: 0.7vh;
+	background-color: #72C9A6;
+}
+
+div.alcineoLogoBox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 35%;
+	width: 100%;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	border-top-left-radius: 0.35vh;
+	border-top-right-radius: 0.35vh;
+	border-bottom-left-radius: 0vh;
+	border-bottom-right-radius: 0vh;
+	background-color: #DBE8D4;
+}
+
+a.alcineoButtonLogo{
+
+}
+
+img.alcineoLogo{
+	display: flex;
+	width: 18vh;
+	height: 16vh;
+	margin-left: 0vh;
+}
+
+img.alcineoLogo:hover{
+	rotate: 30deg;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+img.alcineoLogo::after{
+	rotate: 0deg;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+div.alcineoDescriBox{
+	display: flex;
+	flex-direction: column;
+	height: 65%;
+	width: 100%;
+	border-top-left-radius: 0vh;
+	border-top-right-radius: 0vh;
+	border-bottom-right-radius: 0.35vh;
+	border-bottom-left-radius: 0.35vh;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	background-color: #525E65;
+}
+
+p.titleCompanyAlcineo{
+	margin-top: 5vh;
+	text-align: center;
+	margin-left: 0vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+
+}
+
+span.titleCompanyAlcineoUnderline{
+	text-decoration: underline;
+}
+
+p.titleDurationAlcineo{
+	margin-top: 1.5vh;
+	margin-left: 0vh;
+	text-align: center;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+span.titleDurationAlcineoUnderline{
+	text-decoration: underline;
+}
+
+p.titleMissionsAlcineo{
+	margin-top: 1.5vh;
+	margin-left: 0vh;
+	text-align: center;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+	text-decoration: underline;
+}
+
+p.missionsAlcineoDescri{
+	margin-top: 1.5vh;
+	margin-left: 0vh;
+	margin-right: 0vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+p.alcineoDescri1{
+	text-align: center;
+	margin-top: 0.1vh;
+	margin-left: 3vh;
+	margin-right: 3vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+p.alcineoDescri2{
+	text-align: center;
+	margin-top: 0.1vh;
+	margin-left: 3vh;
+	margin-right: 3vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+p.alcineoDescri3{
+	text-align: center;
+	margin-top: 0.1vh;
+	margin-left: 3vh;
+	margin-right: 3vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+p.alcineoDescri4{
+	text-align: center;
+	margin-top: 0.1vh;
+	margin-left: 3vh;
+	margin-right: 3vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+/*fin alcineo intern box*/
+
+
+/*début LBC intern box*/
+
+div.LBCInternBox{
+	display: flex;
+	flex-direction: column;
+	margin-top: 10vh;
+	width: 40vh;
+	height: 70vh;
+	border-radius: 0.7vh;
+	background-color: #72C9A6;
+}
+
+div.LBCLogoBox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 35%;
+	width: 100%;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	border-top-left-radius: 0.35vh;
+	border-top-right-radius: 0.35vh;
+	border-bottom-left-radius: 0vh;
+	border-bottom-right-radius: 0vh;
+	background-color: #DBE8D4;
+}
+
+a.LBCButtonLogo{
+
+}
+
+img.LBCLogo{
+	display: flex;
+	width: 16vh;
+	height: 16vh;
+	margin-left: 0vh;
+}
+
+img.LBCLogo:hover{
+	rotate: 30deg;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+img.LBCLogo::after{
+	rotate: 0deg;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+div.LBCDescriBox{
+	display: flex;
+	flex-direction: column;
+	height: 65%;
+	width: 100%;
+	border-top-left-radius: 0vh;
+	border-top-right-radius: 0vh;
+	border-bottom-right-radius: 0.35vh;
+	border-bottom-left-radius: 0.35vh;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	background-color: #525E65;
+}
+
+p.titleCompanyLBC{
+	margin-top: 5vh;
+	text-align: center;
+	margin-left: 0vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+
+}
+
+span.titleCompanyLBCUnderline{
+	text-decoration: underline;
+}
+
+p.titleDurationLBC{
+	margin-top: 1.5vh;
+	margin-left: 0vh;
+	text-align: center;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+span.titleDurationLBCUnderline{
+	text-decoration: underline;
+}
+
+p.titleMissionsLBC{
+	margin-top: 1.5vh;
+	margin-left: 0vh;
+	text-align: center;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+	text-decoration: underline;
+}
+
+p.missionsLBCDescri{
+	margin-top: 1.5vh;
+	margin-left: 0vh;
+	margin-right: 0vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+p.LBCDescri1{
+	text-align: center;
+	margin-top: 0.1vh;
+	margin-left: 3vh;
+	margin-right: 3vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+p.LBCDescri2{
+	text-align: center;
+	margin-top: 0.1vh;
+	margin-left: 3vh;
+	margin-right: 3vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+p.LBCDescri3{
+	text-align: center;
+	margin-top: 0.1vh;
+	margin-left: 3vh;
+	margin-right: 3vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+p.LBCDescri4{
+	text-align: center;
+	margin-top: 0.1vh;
+	margin-left: 3vh;
+	margin-right: 3vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+/*fin LBC intern box*/
+
+/*début ILC intern box*/
+
+div.ILCInternBox{
+	display: flex;
+	flex-direction: column;
+	margin-top: 10vh;
+	width: 40vh;
+	height: 70vh;
+	border-radius: 0.7vh;
+	background-color: #72C9A6;
+}
+
+div.ILCLogoBox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 35%;
+	width: 100%;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	border-top-left-radius: 0.35vh;
+	border-top-right-radius: 0.35vh;
+	border-bottom-left-radius: 0vh;
+	border-bottom-right-radius: 0vh;
+	background-color: #DBE8D4;
+}
+
+a.ILCButtonLogo{
+
+}
+
+img.ILCLogo{
+	display: flex;
+	width: 16vh;
+	height: 16vh;
+	margin-left: 0vh;
+}
+
+img.ILCLogo:hover{
+	rotate: 30deg;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+img.ILCLogo::after{
+	rotate: 0deg;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+div.ILCDescriBox{
+	display: flex;
+	flex-direction: column;
+	height: 65%;
+	width: 100%;
+	border-top-left-radius: 0vh;
+	border-top-right-radius: 0vh;
+	border-bottom-right-radius: 0.35vh;
+	border-bottom-left-radius: 0.35vh;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	background-color: #525E65;
+}
+
+p.titleCompanyILC{
+	margin-top: 5vh;
+	text-align: center;
+	margin-left: 0vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+
+}
+
+span.titleCompanyILCUnderline{
+	text-decoration: underline;
+}
+
+p.titleDurationILC{
+	margin-top: 1.5vh;
+	margin-left: 0vh;
+	text-align: center;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+span.titleDurationILCUnderline{
+	text-decoration: underline;
+}
+
+p.titleMissionsILC{
+	margin-top: 1.5vh;
+	margin-left: 0vh;
+	text-align: center;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+	text-decoration: underline;
+}
+
+p.missionsILCDescri{
+	margin-top: 1.5vh;
+	margin-left: 0vh;
+	margin-right: 0vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+p.ILCDescri1{
+	text-align: center;
+	margin-top: 0.1vh;
+	margin-left: 3vh;
+	margin-right: 3vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+p.ILCDescri2{
+	text-align: center;
+	margin-top: 0.1vh;
+	margin-left: 3vh;
+	margin-right: 3vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+p.ILCDescri3{
+	text-align: center;
+	margin-top: 0.1vh;
+	margin-left: 3vh;
+	margin-right: 3vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+p.ILCDescri4{
+	text-align: center;
+	margin-top: 0.1vh;
+	margin-left: 3vh;
+	margin-right: 3vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+/*fin LBC intern box*/
+
+
+/*fin internship Box*/
+
+
+p.copyright{
+	font-size: 1.5vh;
+	color: #525E65;
+}
+
+div.retourHaut{
+	display: flex;
+	margin-bottom: 4vh;
+	width: 8vh;
+	height: 8vh;
+	background-color: #DBE8D4;
+	border-radius: 50%;
+}
+
+img.imgRetourHaut{
+	width: 8vh;
+	height: 8vh;
+}
+
+div.retourHaut:hover{
+	background-color: #73CCA8;
+	transition-duration: 0.6s;
+}
+
+img.backgroundFooter{
+	height: 30vh;
+	width: 100%;
+	object-fit: cover;
+	position: absolute;
+	background-repeat: no-repeat;
+}
+
+a.footerMail{
+	font-size: 2.4vh;
+	color: #73CCA8;
+	text-decoration: none;
+	margin-bottom: 5vh;
+}
+
+a.footerMail:hover{
+	text-decoration: underline;
+}
+
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 30vh;
+	background-color: transparent;
+}
