@@ -97,7 +97,57 @@ setupDropdown(btnDropJarod, dropdownjarod);
 
 // ending of arrow code project
 
+// beginning of BrBad bear buoyancy
 
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function generateRandomKeyframes() {
+    const keyframes = [
+        { percent: 0, x: 0, y: 0 },
+        { percent: 25, x: getRandomInt(-20, 20), y: getRandomInt(-20, 20) },
+        { percent: 50, x: getRandomInt(-20, 20), y: getRandomInt(-20, 20) },
+        { percent: 75, x: getRandomInt(-20, 20), y: getRandomInt(-20, 20) },
+        { percent: 100, x: 0, y: 0 }
+    ];
+
+    let keyframesCSS = '@keyframes floatDiagonal {';
+
+    keyframes.forEach(frame => {
+        keyframesCSS += `
+            ${frame.percent}% {
+                transform: translate(-50%, -50%) translate(${frame.x}px, ${frame.y}px);
+            }
+        `;
+    });
+
+    keyframesCSS += '}';
+
+    const styleSheet = document.createElement("style");
+    styleSheet.type = "text/css";
+    styleSheet.innerText = keyframesCSS;
+    document.head.appendChild(styleSheet);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    generateRandomKeyframes();
+    adjustFloatingImagePosition();
+});
+
+window.addEventListener('resize', adjustFloatingImagePosition);
+
+function adjustFloatingImagePosition() {
+    const projectBox = document.querySelector('.projectBox');
+    const floatingImage = document.getElementById('floatingImage');
+
+    const projectBoxRect = projectBox.getBoundingClientRect();
+    floatingImage.style.left = `${projectBoxRect.right + 90}px`;
+    floatingImage.style.animation = 'floatDiagonal 12s ease-in-out infinite';
+}
+
+
+// ending of BrBad bear buoyancy
 
 
 
