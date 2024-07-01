@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" media="screen and (max-width: 1000px)" href="css/petiteResolution.css">
 	<link rel="icon" href="./img/mercure3.png">
 	<script src="script.js" defer></script>
-	<title>Portfolio</title>
+	<title>GILABERT Theo</title>
 
 
 </head>
@@ -44,7 +44,7 @@
 		<div id="MainBox">
 				<div class="solarBox">
 					<div class="space">
-						<div class="flip-container" onclick="this.classList.toggle('flip')">
+						<div class="flip-container" id="flip-container" onclick="this.classList.toggle('flip')">
 							<div class="flipper">
 								<div class="front">
 									<div class="Profil"></div>
@@ -63,8 +63,8 @@
 
 				<div class="introTheoDiv">
 					<p class="introTheoText">
-						Student in BTS SIO SLAM at Bonaparte HighSchool in Toulon, France | baccalauréat SN RISC mention Très Bien | Web developer | Game developper<br><br>
-						I am in development for a few years now, I can transform nothingness into a remarkable App. I don't use tricks to make my work easier, I only use pure magic, like C#, JS, PHP and all other types of magic I need to finish the job.<br><br>
+						Student at BTS SIO SLAM at Bonaparte HighSchool in Toulon, France | Baccalauréat SN RISC mention Très Bien | Web developer | Game developer<br><br>
+						I've been in IT for many years and I started programming in late 2021. I can transform nothingness into a remarkable App. I don't use tricks to make my work easier, I only use pure magic, like C#, JS, PHP and all other types of magic I need to finish the job.<br><br>
 						Programming is a strange kind of magic, but as you can see on this website, I can control this magic. On this website you can see the work I've made that makes me proud.
 					</p>
 				</div>
@@ -73,7 +73,7 @@
 				<div class="projectBox" id="projets">
 					<h1 class="projectTitle">My Projects</h1>
 					<hr class="projetUnderline">
-					<p class="projectDescri">These are the projects i'm proud of, click on it to have more informations</p>
+					<p class="projectDescri">These are the projects i'm proud of, click on it to have more information</p>
 					<div class="projectLogoBox">
 						<div class="projectTopBox">
 							<div class="lthBox">
@@ -87,7 +87,7 @@
 										</button>
 										<div class="bloc-links-lth">
 											<p class="lthDescri">Los Tortillas Hermanos is one of my first websites, it's a fast food website, and there is an online shop on it, so you can order one of our delicious Tortillas.</p>
-											<a class="lthDescriRedirect" target="_blank" href="https://los-tortillas-hermanos.000webhostapp.com/">Tortillas !</a>
+											<a class="lthDescriRedirect" target="_blank" href="https://github.com/Geapen1503/Los-Tortillas-Hermanos_v1.6">Tortillas !</a>
 										</div>
 									</div>
 								</div>
@@ -121,7 +121,7 @@
 											<img class="arrowJarod" src="img/arrowBackground.png">
 										</button>
 										<div class="bloc-links-jarod">
-											<p class="akbDescri">Jarod'57 is my first 3D game, I made it with unity. For the moment the game is still in dev, wait and the final game will be on steam</p>
+											<p class="akbDescri">Jarod'57 is my first 3D game, I've made it with unity. For the moment the game is still in dev, wait and the final game will be on steam</p>
 											<a class="jarodDescriRedirect" target="_blank" href="https://github.com/Geapen1503/Jarod-57-Early-access">Jarod'57</a>
 										</div>
 									</div>
@@ -136,10 +136,59 @@
 
 
 
-				<div id="internBox">
-					<h1 class="internTitle">My Internships</h1>
+				<div class="projectBoxPro" id="projetsPro">
+					<h1 class="projectTitlePro">Internship Projects</h1>
+					<hr class="projetUnderlinePro">
+					<p class="projectDescriPro">These are the projects I've made when I was an intern, click on it to have more information</p>
+					<div class="projectLogoBoxPro">
+						<div class="projectTopBoxPro">
+							<div class="blogAIBoxPro">
+								<a class="blogAIButtonPro" target="_blank" href="">
+									<img class="blogAILogoPro" src="img/BlogAILogo.png">
+								</a>
+								<div class="buttonBlogAiDescriPro">
+									<div class="dropdownBlogAIPro">
+										<button class="bloc-top-BlogAIPro">
+											<img class="arrowBlogAIPro" src="img/arrowBackground.png">
+										</button>
+										<div class="bloc-links-BlogAIPro">
+											<p class="blogAIDescriPro">Blog AI is a Node API and WP Plugin that I have made when I was an Intern at Ortros.</p>
+											<a class="blogAIDescriRedirectPro" target="_blank" href="https://github.com/Geapen1503/BlogAI_NodeJS">Blog AI !</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+			<div id="internBox">
+					<h1 class="internTitle">8 Months of Internships</h1>
 					<hr class="internUnderline">
 					<p class="internDescri">This is the internships I've done, click on it to have more information</p>
+
+
+					<div class="ortrosInternBox">
+						<div class="ortrosLogoBox">
+							<a class="ortrosButtonLogo" target="_blank" href="https://www.ortros.fr/">
+								<img class="ortrosLogo" src="img/ortrosLogo.png">
+							</a>
+						</div>
+						<div class="ortrosDescriBox">
+							<p class="titleCompanyOrtros"><span class="titleCompanyOrtrosUnderline">The company:</span> Ortros</p>
+							<p class="titleDurationOrtros"><span class="titleDurationOrtrosUnderline">I worked here for:</span> 4 weeks</p>
+							<p class="titleMissionsOrtros">My missions:</p>
+							<p class="missionsOrtrosDescri">
+							<p class="ortrosDescri1">My mission was to add the auto-calibration when a seal</p>
+							<p class="ortrosDescri2">comes in the Seal Detection Sensor, the program</p>
+							<p class="ortrosDescri3">was in C. When this was done, I made</p>
+							<p class="ortrosDescri4">documentation for the SDS.</p>
+							</p>
+						</div>
+					</div>
+
 
 					<div class="traxensInternBox">
 						<div class="traxensLogoBox">
@@ -226,7 +275,7 @@
 		</div>
 
 		<a class="footerMail" href="mailto:theogilat@gmail.com">theogilat@gmail.com</a>
-		<p class="copyright">&copy 2023 Gilabert Theo</p>
+		<p class="copyright">&copy 2024 Gilabert Theo</p>
 	</footer>
 
 </body>

@@ -12,13 +12,6 @@ window.onscroll = function() {
 // end navbar shadow
 
 
-// beginning of flip pp on load
-
-
-
-// ending of flip pp on load
-
-
 // beginning of star script
 
 var ctx = cnv.getContext("2d");
@@ -33,21 +26,27 @@ ctx.fillRect(0, 0, W, H);
 ctx.shadowBlur = 10;
 ctx.shadowColor = "white";
 
+let starCount = 0;
+const maxStars = 100;
+
 function starsAnimation() {
-  let x = W * Math.random();
-  let y = H * Math.random();
-  let r = 2.5 * Math.random();
+  if (starCount <= maxStars) {
+      let x = W * Math.random();
+      let y = H * Math.random();
+      let r = 2.5 * Math.random();
 
-  let factor = (y/H)*0.2 + 0.8; 
+      let factor = (y / H) * 0.2 + 0.8;
 
-  if(Math.random() > factor) {
-    ctx.beginPath();
-    ctx.fillStyle = "#AAB5A9";
-    ctx.arc(x, y, r, 0, Math.PI * 2);
-    ctx.fill();
+      if (Math.random() > factor) {
+          ctx.beginPath();
+          ctx.fillStyle = "#AAB5A9";
+          ctx.arc(x, y, r, 0, Math.PI * 2);
+          ctx.fill();
+          starCount ++;
+      }
+
+      setTimeout(starsAnimation, 90);
   }
-  
-  setTimeout(starsAnimation, 90);
 }
 
 starsAnimation();
@@ -94,8 +93,14 @@ const btnDropJarod = document.querySelector(".bloc-top-jarod");
 const dropdownjarod = document.querySelector(".dropdownJarod");
 setupDropdown(btnDropJarod, dropdownjarod);
 
+const btnDropBlogAI = document.querySelector(".bloc-top-BlogAIPro");
+const dropdownBlogAI = document.querySelector(".dropdownBlogAIPro");
+setupDropdown(btnDropBlogAI, dropdownBlogAI);
+
 
 // ending of arrow code project
+
+
 
 // beginning of BrBad bear buoyancy
 

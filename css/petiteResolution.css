@@ -115,7 +115,7 @@ div.content h2:nth-child(2){
 div#MainBox{
 	display: flex;
 	width: 100%;
-	height: 570vh;
+	height: 760vh;
 	margin-top: -0vh;
 }
 
@@ -218,7 +218,7 @@ canvas#cnv{
 	left: 50%; top: 50%;
 	transform: translate(-50%, -50%);
 	border-radius: 50%;
-	background: url(../img/mercure3.png);
+	background: url(../img/Theo_Profile_Pic.jpg);
 	margin-top: 7vh;
 	margin-left: 0%;
 	opacity: 0.9;
@@ -609,19 +609,160 @@ a.jarodDescriRedirect:hover{
 /*fin projectBox*/
 
 
+
+/* début projectBoxPro */
+
+
+div.projectBoxPro {
+	display: flex;
+	flex-direction: column;
+	margin-top: -15vh;
+	width: 100%;
+	height: 120vh;
+	align-items: center;
+}
+
+h1.projectTitlePro {
+	margin-top: 1vh;
+	color: #DBE8D4;
+	font-size: 5vh;
+}
+
+hr.projetUnderlinePro {
+	margin-top: 3vh;
+	width: 40vh;
+	height: 0.3vh;
+	border: none;
+	background-color: #525E65;
+}
+
+p.projectDescriPro {
+	margin-top: 4vh;
+	color: #485E81;
+	text-align: center;
+	width: 40vh;
+	font-size: 2.2vh;
+}
+
+div.projectLogoBoxPro {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	margin-top: -4vh;
+	width: 100%;
+	height: 120vw;
+}
+
+div.blogAIBoxPro {
+	display: flex;
+	flex-direction: column;
+	width: 20vh;
+	height: 20vh;
+}
+
+img.blogAILogoPro {
+	display: flex;
+	margin-left: -1vh;
+	width: 22.5vh;
+	height: 22.5vh;
+}
+
+
+a.blogAIButtonPro {
+	z-index: 1;
+}
+
+.dropdownBlogAIPro {
+	display: none;
+	max-width: 27.359781121751027vh;
+	height: 8.618331053351573vh;
+	border-radius: 0.683vh;
+	margin-top: -2vh;
+	background-color: transparent;
+	transition: height 0.2s ease-in-out;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.bloc-top-BlogAIPro {
+	padding: 2.735978112175103vh;
+	display: block;
+	width: 100%;
+	border: none;
+	outline: none;
+	font-size: 2.735978112175103vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	color: white;
+	cursor: pointer;
+	border-radius: 0.683vh;
+	clip-path: polygon(30% 0%, 70% 0%, 70% 100%, 30% 100%);
+}
+
+img.arrowBlogAIPro {
+	margin-top: -3.5vh;
+	width: 10vh;
+	border-radius: 50%;
+}
+
+.bloc-links-BlogAIPro {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	margin-left: 1vh;
+	margin-right: 1vh;
+}
+
+p.blogAIDescriPro {
+	margin-top: 0vh;
+	margin-bottom: 1vh;
+	color: white;
+	font-size: 2.1vh;
+}
+
+a.blogAIDescriRedirectPro {
+	display: flex;
+	font-size: 2.6vh;
+	font-weight: bold;
+	text-decoration: none;
+	color: #242936;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	background-color: #DBE8D4;
+	border-radius: 0.5vh;
+	margin-bottom: 1vh;
+	width: 18vh;
+	height: 5vh;
+}
+
+a.blogAIDescriRedirectPro:hover {
+	transition-duration: 600ms;
+	background-color: #72C9A6;
+}
+
+/* fin projectBoxPro */
+
+
+
+
 /*début internship Box*/
 
 div#internBox{
 	display: flex;
 	flex-direction: column;
-	margin-top: -25vh;
+	margin-top: -40vh;
 	width: 100%;
-	height: 350vh;
+	height: 440vh;
 	align-items: center;
 /*	background-color: hotpink;*/
 }
 
 h1.internTitle{
+	text-align: center;
 	margin-top: 1vh;
 	color: #DBE8D4;
 	font-size: 5vh;
@@ -641,6 +782,151 @@ p.internDescri{
 	color: #485E81;
 	font-size: 2.2vh;
 }
+
+
+
+/*début ortros intern box*/
+
+div.ortrosInternBox{
+	display: flex;
+	flex-direction: column;
+	margin-top: 10vh;
+	width: 40vh;
+	height: 70vh;
+	border-radius: 0.7vh;
+	background-color: #72C9A6;
+}
+
+div.ortrosLogoBox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 35%;
+	width: 100%;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	border-top-left-radius: 0.35vh;
+	border-top-right-radius: 0.35vh;
+	border-bottom-left-radius: 0vh;
+	border-bottom-right-radius: 0vh;
+	background-color: #DBE8D4;
+}
+
+a.ortrosButtonLogo{
+
+}
+
+img.ortrosLogo{
+	display: flex;
+	width: 18vh;
+	height: 20vh;
+	margin-left: 0vh;
+}
+
+img.ortrosLogo:hover{
+	rotate: 30deg;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+img.ortrosLogo::after{
+	rotate: 0deg;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+div.ortrosDescriBox{
+	display: flex;
+	flex-direction: column;
+	height: 65%;
+	width: 100%;
+	border-top-left-radius: 0vh;
+	border-top-right-radius: 0vh;
+	border-bottom-right-radius: 0.35vh;
+	border-bottom-left-radius: 0.35vh;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	background-color: #525E65;
+}
+
+p.titleCompanyOrtros{
+	margin-top: 5vh;
+	text-align: center;
+	margin-left: 0vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+span.titleCompanyOrtrosUnderline{
+	text-decoration: underline;
+}
+
+p.titleDurationOrtros{
+	margin-top: 1.5vh;
+	margin-left: 0vh;
+	text-align: center;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+span.titleDurationOrtrosUnderline{
+	text-decoration: underline;
+}
+
+p.titleMissionsOrtros{
+	margin-top: 1.5vh;
+	margin-left: 0vh;
+	text-align: center;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+	text-decoration: underline;
+}
+
+p.missionsOrtrosDescri{
+	margin-top: 1.5vh;
+	margin-left: 0vh;
+	margin-right: 3vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+p.ortrosDescri1{
+	text-align: center;
+	margin-top: 0.1vh;
+	margin-left: 0vh;
+	margin-right: 0vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+p.ortrosDescri2{
+	text-align: center;
+	margin-top: 0.1vh;
+	margin-left: 0vh;
+	margin-right: 0vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+p.ortrosDescri3{
+	text-align: center;
+	margin-top: 0.1vh;
+	margin-left: 0vh;
+	margin-right: 0vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+p.ortrosDescri4{
+	text-align: center;
+	margin-top: 0.1vh;
+	margin-left: 0vh;
+	margin-right: 0vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+/*fin ortros intern box*/
+
+
 
 /*début traxens intern box*/
 
