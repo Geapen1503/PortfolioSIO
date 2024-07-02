@@ -115,7 +115,7 @@ div.content h2:nth-child(2){
 div#MainBox{
 	display: flex;
 	width: 100%;
-	height: 760vh;
+	height: 765vh;
 	margin-top: -0vh;
 }
 
@@ -249,6 +249,51 @@ p.introTheoText{
 
 #floatingImage {
 	display: none;
+}
+
+
+/* beginning of social network temparary buoyancy */
+
+#floatingGithubImage {
+	position: absolute;
+	right: 46vw;
+	top: 780%;
+	width: 5vh;
+	height: 5vh;
+	transform: translate(-50%, -50%);
+
+	animation: floatDiagonal 5s ease-in-out infinite;
+}
+
+#floatingLinkedinImage{
+	position: absolute;
+	right: 32vw;
+	top: 780%;
+	width: 5vh;
+	height: 5vh;
+	transform: translate(-50%, -50%);
+
+	animation: floatDiagonal 5s ease-in-out infinite;
+}
+
+/* ending of social network temparary buoyancy */
+
+@keyframes floatDiagonal {
+	0% {
+		transform: translate(-50%, -50%) translate(0, 0);
+	}
+	25% {
+		transform: translate(-50%, -50%) translate(20px, 20px);
+	}
+	50% {
+		transform: translate(-50%, -50%) translate(40px, 0);
+	}
+	75% {
+		transform: translate(-50%, -50%) translate(20px, -20px);
+	}
+	100% {
+		transform: translate(-50%, -50%) translate(0, 0);
+	}
 }
 
 
@@ -823,13 +868,14 @@ img.ortrosLogo{
 }
 
 img.ortrosLogo:hover{
-	rotate: 30deg;
+	width: 18vh;
+	height: 20vh;
 	behavior: smooth;
 	transition-duration: 0.6s;
 }
 
 img.ortrosLogo::after{
-	rotate: 0deg;
+/*	rotate: 0deg;*/
 	behavior: smooth;
 	transition-duration: 0.6s;
 }
@@ -966,7 +1012,7 @@ img.traxensLogo{
 }
 
 img.traxensLogo:hover{
-	rotate: 30deg;
+	rotate: 0deg;
 	behavior: smooth;
 	transition-duration: 0.6s;
 }
@@ -1109,7 +1155,7 @@ img.alcineoLogo{
 }
 
 img.alcineoLogo:hover{
-	rotate: 30deg;
+	rotate: 0deg;
 	behavior: smooth;
 	transition-duration: 0.6s;
 }
@@ -1252,13 +1298,14 @@ img.LBCLogo{
 }
 
 img.LBCLogo:hover{
-	rotate: 30deg;
+	width: 16vh;
+	height: 16vh;
 	behavior: smooth;
 	transition-duration: 0.6s;
 }
 
 img.LBCLogo::after{
-	rotate: 0deg;
+/*	rotate: 0deg;*/
 	behavior: smooth;
 	transition-duration: 0.6s;
 }
@@ -1394,13 +1441,14 @@ img.ILCLogo{
 }
 
 img.ILCLogo:hover{
-	rotate: 30deg;
+	width: 16vh;
+	height: 16vh;
 	behavior: smooth;
 	transition-duration: 0.6s;
 }
 
 img.ILCLogo::after{
-	rotate: 0deg;
+/*	rotate: 0deg;*/
 	behavior: smooth;
 	transition-duration: 0.6s;
 }
