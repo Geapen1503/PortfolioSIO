@@ -107,7 +107,7 @@ setupDropdown(btnDropBlogAI, dropdownBlogAI);
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
+/*
 function generateRandomKeyframes() {
     const keyframes = [
         { percent: 0, x: 0, y: 0 },
@@ -135,6 +135,8 @@ function generateRandomKeyframes() {
     document.head.appendChild(styleSheet);
 }
 
+
+/*
 document.addEventListener('DOMContentLoaded', () => {
     generateRandomKeyframes();
     adjustFloatingImagePosition();
@@ -150,7 +152,7 @@ function adjustFloatingImagePosition() {
     floatingImage.style.left = `${projectBoxRect.right + 90}px`;
     floatingImage.style.animation = 'floatDiagonal 12s ease-in-out infinite';
 }
-
+*/
 
 // ending of BrBad bear buoyancy
 

@@ -280,6 +280,7 @@ p.introTheoText{
 /* beginning of social network temparary buoyancy */
 
 #floatingGithubImage {
+	display: none;
 	position: absolute;
 	right: 48vw;
 	top: 600%;
@@ -291,6 +292,7 @@ p.introTheoText{
 }
 
 #floatingLinkedinImage{
+	display: none;
 	position: absolute;
 	right: 42vw;
 	top: 600%;
