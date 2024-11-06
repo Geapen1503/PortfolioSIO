@@ -136,7 +136,7 @@ div#MainBox{
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
-	height: 265vw;
+	height: 315vw;
 }
 
 canvas#cnv{
@@ -167,11 +167,10 @@ canvas#cnv{
 }
 
 .Profil{
-	position: relative;
-	left: 50%; top: 50%;
-	transform: translate(-50%, -50%);
 	border-radius: 50%;
-	background: url(../img/mercure3.png);
+	background: url(../img/Theo_Profile_Pic.jpg);
+	margin-top: -66%;
+	margin-left: -17%;
 	opacity: 0.9;
 	width: 10.10vw;
 	height: 10.10vw;
@@ -234,13 +233,14 @@ canvas#cnv{
 }
 
 .ProfilBack {
+	position: relative;
+	left: 50%; top: 50%;
+	transform: translate(-49.8%, -50%);
 	border-radius: 50%;
-	background: url(../img/Theo_Profile_Pic.jpg);
-	margin-top: -66%;
-	margin-left: -17%;
-	opacity: 0.9;
-	width: 10.10vw;
-	height: 10.10vw;
+	background: url(../img/mercure3.png);
+	opacity: 1;
+	width: 10.16vw;
+	height: 10.16vw;
 	background-size: cover;
 }
 
@@ -654,7 +654,67 @@ a.blogAIDescriRedirectPro:hover {
 /* fin projectBoxPro */
 
 
+/* début courses box */
 
+div#coursesBox{
+	display: flex;
+	flex-direction: column;
+	margin-top: 3vh;
+	margin-bottom: 8vw;
+	width: 56.56vw;
+	height: 40vw;
+	align-items: center;
+	/*	background-color: hotpink;*/
+}
+
+h1.coursesTitle{
+	margin-top: 0.47vw;
+	color: #DBE8D4;
+	font-size: 2.35vw;
+}
+
+hr.coursesUnderline{
+	margin-top: 1.41vw;
+	width: 23.56vw;
+	height: 0.14vw;
+	border: none;
+	background-color: #525E65;
+}
+
+p.coursesDescri{
+	text-align: center;
+	margin-top: 1.88vw;
+	margin-bottom: 4vw;
+	color: #485E81;
+	font-size: 1.03vw;
+}
+
+.courseBoxContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 50vw;
+	height: 25vw;
+	align-items: center;
+	background-color: transparent;
+}
+
+div.courseBoxPro {
+	display: flex;
+	width: 9.42vw;
+	height: 14.14vw;
+}
+
+img.courseLogoPro {
+	display: flex;
+	width: 9vw;
+	height: 9vw;
+	border-radius: 50%;
+
+}
+
+
+/* fin courses box */
 
 /*début internship Box*/
 
