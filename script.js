@@ -156,6 +156,21 @@ function adjustFloatingImagePosition() {
 
 // ending of BrBad bear buoyancy
 
+// beginning interships popup
+
+function openPopup() {
+    document.getElementById("popupOverlay").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("popupOverlay").style.display = "none";
+}
+
+function closePopupOnClickOutside(event) {
+    if (event.target.id === "popupOverlay") closePopup();
+}
+
+// ending of interships popup
 
 
 // début code bouton du bas

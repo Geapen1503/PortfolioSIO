@@ -205,7 +205,7 @@
 					<p class="internDescri">This is the internships I've done, click on it to have more information</p>
 
 
-					<div class="ortrosInternBox">
+					<div class="ortrosInternBox" onclick="openPopup()">
 						<div class="ortrosLogoBox">
 							<a class="ortrosButtonLogo" target="_blank" href="https://www.ortros.fr/">
 								<img class="ortrosLogo" src="img/ortrosLogo.png">
@@ -221,6 +221,15 @@
 							<p class="ortrosDescri3">with images, and with the WP plugin I've developed </p>
 							<p class="ortrosDescri4">with it, it will publish them on a schedule.</p>
 							</p>
+						</div>
+					</div>
+
+					<div id="popupOverlay" class="popupOverlay" onclick="closePopupOnClickOutside(event)">
+						<div class="popupContent">
+							<span class="closeButton" onclick="closePopup()">&times;</span>
+							<h2>Details sur l'expérience chez Ortros</h2>
+							<p>Développement d'une API Node.JS pour générer automatiquement des articles de blog avec des images, et publication automatisée via un plugin WordPress.</p>
+
 						</div>
 					</div>
 
