@@ -264,6 +264,10 @@ p.introTheoText{
 	font-size: 1.22vw;
 }
 
+span.highlightDiplomaText{
+	color: #72C9A6;
+}
+
 /* beginning of BrBad bear buoyancy */
 
 
@@ -279,49 +283,71 @@ p.introTheoText{
 
 /* beginning of social network temparary buoyancy */
 
-#floatingGithubImage {
-	display: none;
-	position: absolute;
-	right: 48vw;
-	top: 600%;
-	width: 4vw;
-	height: 4vw;
-	transform: translate(-50%, -50%);
-
-	animation: floatDiagonal 5s ease-in-out infinite;
+div.networkBox {
+	display: flex;
+	width: 100%;
+	height: 15vh;
+	justify-content: center;
+	align-items: center;
 }
 
-#floatingLinkedinImage{
-	display: none;
-	position: absolute;
-	right: 42vw;
-	top: 600%;
+#floatingGithubImage {
+	display: flex;
 	width: 4vw;
 	height: 4vw;
-	transform: translate(-50%, -50%);
+	margin-left: 6vw;
+	animation: floatRandomGithub 6s ease-in-out infinite alternate;
+}
 
-	animation: floatDiagonal 5s ease-in-out infinite;
+#floatingLinkedinImage {
+	display: flex;
+	width: 4vw;
+	height: 4vw;
+	margin-left: 3vw;
+	animation: floatRandomLinkedin 7s ease-in-out infinite alternate;
 }
 
 /* ending of social network temparary buoyancy */
 
-@keyframes floatDiagonal {
+@keyframes floatRandomGithub {
 	0% {
-		transform: translate(-50%, -50%) translate(0, 0);
+		transform: translate(-50%, -50%) translate(0, 0) rotate(0deg);
 	}
 	25% {
-		transform: translate(-50%, -50%) translate(20px, 20px);
+		transform: translate(-50%, -50%) translate(15px, -10px) rotate(5deg);
 	}
 	50% {
-		transform: translate(-50%, -50%) translate(40px, 0);
+		transform: translate(-50%, -50%) translate(-10px, 15px) rotate(-3deg);
 	}
 	75% {
-		transform: translate(-50%, -50%) translate(20px, -20px);
+		transform: translate(-50%, -50%) translate(5px, -15px) rotate(2deg);
 	}
 	100% {
-		transform: translate(-50%, -50%) translate(0, 0);
+		transform: translate(-50%, -50%) translate(0, 0) rotate(0deg);
 	}
 }
+
+@keyframes floatRandomLinkedin {
+	0% {
+		transform: translate(-50%, -50%) translate(0, 0) rotate(0deg);
+	}
+	20% {
+		transform: translate(-50%, -50%) translate(-10px, 15px) rotate(-4deg);
+	}
+	40% {
+		transform: translate(-50%, -50%) translate(12px, -8px) rotate(6deg);
+	}
+	60% {
+		transform: translate(-50%, -50%) translate(-5px, 10px) rotate(-2deg);
+	}
+	80% {
+		transform: translate(-50%, -50%) translate(8px, -12px) rotate(3deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) translate(0, 0) rotate(0deg);
+	}
+}
+
 
 
 /* ending of BrBad bear buoyancy */
@@ -718,9 +744,432 @@ img.courseLogoPro {
 
 /*début internship Box*/
 
+div#internBox{
+	display: flex;
+	flex-direction: column;
+	margin-top: 0vh;
+	width: 56.56vw;
+	height: 100vw;
+	align-items: center;
+}
+
+.interBoxText {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 10%;
+	align-items: center;
+}
+
+.openInternBox{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 40%;
+	align-items: center;
+}
+
+.closedInternBox{
+	display: flex;
+	flex-direction: column;
+	margin-top: -1.5vw;
+	width: 100%;
+	height: 50%;
+	align-items: center;
+}
+
+h1.internTitle{
+	margin-top: 0.47vw;
+	color: #DBE8D4;
+	font-size: 2.35vw;
+}
+
+hr.internUnderline{
+	margin-top: 1.41vw;
+	width: 23.56vw;
+	height: 0.14vw;
+	border: none;
+	background-color: #525E65;
+}
+
+p.internDescri{
+	text-align: center;
+	margin-top: 1.88vw;
+	color: #485E81;
+	font-size: 1.03vw;
+}
+
+
+/* début open intership box */
+
+div.openInInternBox{
+	display: flex;
+	flex-direction: row;
+	margin-top: 4.71vw;
+	width: 47.13vw;
+	height: 14.14vw;
+	border-radius: 0.32vw;
+	background-color: #72C9A6;
+}
+
+div.openInLogoBox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 30%;
+	clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+	border-top-left-radius: 0.32vw;
+	border-bottom-left-radius: 0.32vw;
+	border-bottom-right-radius: 0vw;
+	border-top-right-radius: 0.16vw;
+	background-color: #DBE8D4;
+}
+
+a.openInButtonLogo{
+
+}
+
+img.openInLogo{
+	display: flex;
+	width: 8.48vw;
+	height: 9.42vw;
+	margin-left: -1.41vw;
+}
+
+img.openInLogo:hover{
+	rotate: 30deg;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+img.openInLogo::after{
+	rotate: 0deg;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+img.openInSecondLogo{
+	display: flex;
+	width: 8.48vw;
+	height: 9.42vw;
+	margin-left: -1.41vw;
+}
+
+img.openInSecondLogo:hover{
+	width: 6.83vw;
+	height: 7.83vw;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+img.openInThirdLogo::after{
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+img.openInThirdLogo{
+	display: flex;
+	width: 7.48vw;
+	height: 7.42vw;
+	margin-left: -1.41vw;
+}
+
+img.openInThirdLogo:hover{
+	width: 5.83vw;
+	height: 5.83vw;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+img.openInThirdLogo::after{
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+div.openInDescriBox{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 70%;
+	border-top-right-radius: 0.32vw;
+	border-bottom-right-radius: 0.32vw;
+	border-top-left-radius: 0vw;
+	border-bottom-left-radius: 0vw;
+	clip-path: polygon(9% 0%, 100% 0%, 100% 100%, 0% 100%);
+	background-color: #525E65;
+}
+
+p.titleCompanyOpenIn{
+	margin-top: 1.41vw;
+	margin-left: 5.7vw;
+	color: #DBE8D4;
+	font-size: 1.13vw;
+
+}
+
+span.titleCompanyOpenInUnderline{
+	text-decoration: underline;
+}
+
+p.titleDurationOpenIn{
+	margin-top: 0.7vw;
+	margin-left: 5.04vw;
+	color: #DBE8D4;
+	font-size: 1.13vw;
+}
+
+span.titleDurationOpenInUnderline{
+	text-decoration: underline;
+}
+
+p.titleMissionsOpenIn{
+	margin-top: 0.7vw;
+	margin-left: 4.38vw;
+	color: #DBE8D4;
+	font-size: 1.13vw;
+	text-decoration: underline;
+}
+
+p.missionsOpenInDescri{
+	margin-top: 0.7vw;
+	margin-left: 0vw;
+	margin-right: 1.41vw;
+	color: #DBE8D4;
+	font-size: 1.13vw;
+}
+
+p.openInDescri1{
+	margin-top: 0.04vw;
+	margin-left: 3.77vw;
+	color: #DBE8D4;
+	font-size: 1.13vw;
+}
+
+p.openInDescri2{
+	margin-top: 0.04vw;
+	margin-left: 3.29vw;
+	color: #DBE8D4;
+	font-size: 1.13vw;
+}
+
+p.openInDescri3{
+	margin-top: 0.04vw;
+	margin-left: 2.82vw;
+	color: #DBE8D4;
+	font-size: 1.13vw;
+}
+
+p.openInDescri4{
+	margin-top: 0.04vw;
+	margin-left: 2.35vw;
+	color: #DBE8D4;
+	font-size: 1.13vw;
+}
+
+/* fin open intership box */
+
+/* début closed intership boxes */
+
+div.closedInternInternBox{
+	display: flex;
+	flex-direction: row;
+	margin-top: 4.71vw;
+	width: 47.13vw;
+	height: 14.14vw;
+	border-radius: 0.32vw;
+	background-color: #72C9A6;
+}
+
+.closedInternInternBox.expanded {
+	margin-top: -5vw !important;
+	margin-bottom: 10vw !important;
+	transition-duration: 0.6s;
+}
+
+.closedInternInternBox:first-child.expanded {
+	margin-top: 3vw !important;
+	margin-bottom: 10vw !important;
+}
+
+.closedInternInternBox:nth-child(n+2){
+	margin-top: -10vw;
+	box-shadow: 0px 0px 10px black;
+	z-index: 5;
+}
+
+.closedInternInternBox:nth-child(1):hover {
+	margin-top: 3vw;
+	margin-bottom: 2vw;
+	transition-duration: 0.6s;
+}
+
+.closedInternInternBox:nth-child(2):hover{
+	margin-top: -11vw;
+	margin-bottom: 2vw;
+	transition-duration: 0.6s;
+}
+
+.closedInternInternBox:nth-child(3):hover,
+.closedInternInternBox:nth-child(4):hover{
+	margin-top: -9vw;
+	transition-duration: 0.6s;
+}
+
+div.closedInternLogoBox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 30%;
+	clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+	border-top-left-radius: 0.32vw;
+	border-bottom-left-radius: 0.32vw;
+	border-bottom-right-radius: 0vw;
+	border-top-right-radius: 0.16vw;
+	background-color: #DBE8D4;
+}
+
+a.closedInternButtonLogo{
+
+}
+
+img.closedInternLogo{
+	display: flex;
+	width: 8.48vw;
+	height: 7.54vw;
+	margin-left: -2.35vw;
+}
+
+img.closedInternLogo:hover{
+	rotate: 41deg;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+img.closedInternLogo::after{
+	rotate: 0deg;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+.closedInternSecondLogo{
+	display: flex;
+	width: 8.01vw;
+	height: 8.01vw;
+	margin-left: -2.35vw;
+}
+
+.closedInternSecondLogo:hover{
+	width: 6.83vw;
+	height: 6.83vw;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+.closedInternSecondLogo::after{
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+div.closedInternDescriBox{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 70%;
+	border-top-right-radius: 0.32vw;
+	border-bottom-right-radius: 0.32vw;
+	border-top-left-radius: 0vw;
+	border-bottom-left-radius: 0vw;
+	clip-path: polygon(9% 0%, 100% 0%, 100% 100%, 0% 100%);
+	background-color: #525E65;
+}
+
+p.titleCompanyClosedIntern{
+	margin-top: 1.41vw;
+	margin-left: 5.7vw;
+	color: #DBE8D4;
+	font-size: 1.13vw;
+
+}
+
+span.titleCompanyClosedInternUnderline{
+	text-decoration: underline;
+}
+
+p.titleDurationClosedIntern{
+	margin-top: 0.7vw;
+	margin-left: 5.04vw;
+	color: #DBE8D4;
+	font-size: 1.13vw;
+}
+
+span.titleDurationClosedInternUnderline{
+	text-decoration: underline;
+}
+
+p.titleMissionsClosedIntern{
+	margin-top: 0.7vw;
+	margin-left: 4.38vw;
+	color: #DBE8D4;
+	font-size: 1.13vw;
+	text-decoration: underline;
+}
+
+p.missionsClosedInternDescri{
+	margin-top: 0.7vw;
+	margin-left: 0vw;
+	margin-right: 1.41vw;
+	color: #DBE8D4;
+	font-size: 1.13vw;
+}
+
+p.closedInternDescri1{
+	margin-top: 0.04vw;
+	margin-left: 3.77vw;
+	color: #DBE8D4;
+	font-size: 1.13vw;
+}
+
+p.closedInternDescri2{
+	margin-top: 0.04vw;
+	margin-left: 3.29vw;
+	color: #DBE8D4;
+	font-size: 1.13vw;
+}
+
+p.closedInternDescri3{
+	margin-top: 0.04vw;
+	margin-left: 2.82vw;
+	color: #DBE8D4;
+	font-size: 1.13vw;
+}
+
+p.closedInternDescri4{
+	margin-top: 0.04vw;
+	margin-left: 2.35vw;
+	color: #DBE8D4;
+	font-size: 1.13vw;
+}
+/* fin closed intership boxes */
+
 /* début popup intern box */
 
-.popupOverlay {
+.popupOverlayITSystems {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+	cursor: pointer;
+}
+
+.popupOverlayOrtros {
 	display: none;
 	position: fixed;
 	top: 0;
@@ -757,704 +1206,7 @@ img.courseLogoPro {
 }
 /* fin popup intern box */
 
-div#internBox{
-	display: flex;
-	flex-direction: column;
-	margin-top: 0vh;
-	width: 56.56vw;
-	height: 110.56vw;
-	align-items: center;
-/*	background-color: hotpink;*/
-}
-
-h1.internTitle{
-	margin-top: 0.47vw;
-	color: #DBE8D4;
-	font-size: 2.35vw;
-}
-
-hr.internUnderline{
-	margin-top: 1.41vw;
-	width: 23.56vw;
-	height: 0.14vw;
-	border: none;
-	background-color: #525E65;
-}
-
-p.internDescri{
-	text-align: center;
-	margin-top: 1.88vw;
-	color: #485E81;
-	font-size: 1.03vw;
-}
-
-
-/*début ortros intership box*/
-
-div.ortrosInternBox{
-	display: flex;
-	cursor: pointer;
-	flex-direction: row;
-	margin-top: 8.71vw;
-	width: 47.13vw;
-	height: 14.14vw;
-	border-radius: 0.32vw;
-	background-color: #72C9A6;
-}
-
-div.ortrosLogoBox{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	width: 30%;
-	clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
-	border-top-left-radius: 0.32vw;
-	border-bottom-left-radius: 0.32vw;
-	border-bottom-right-radius: 0vw;
-	border-top-right-radius: 0.16vw;
-	background-color: #DBE8D4;
-}
-
-a.ortrosButtonLogo{
-
-}
-
-img.ortrosLogo{
-	display: flex;
-	width: 8.48vw;
-	height: 9.42vw;
-	margin-left: -1.41vw;
-}
-
-img.ortrosLogo:hover{
-	width: 6.83vw;
-	height: 6.83vw;
-	behavior: smooth;
-	transition-duration: 0.6s;
-}
-
-img.ortrosLogo::after{
-	/*	rotate: 0deg;*/
-	behavior: smooth;
-	transition-duration: 0.6s;
-}
-
-div.ortrosDescriBox{
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	width: 70%;
-	border-top-right-radius: 0.32vw;
-	border-bottom-right-radius: 0.32vw;
-	border-top-left-radius: 0vw;
-	border-bottom-left-radius: 0vw;
-	clip-path: polygon(9% 0%, 100% 0%, 100% 100%, 0% 100%);
-	background-color: #525E65;
-}
-
-p.titleCompanyOrtros{
-	margin-top: 1.41vw;
-	margin-left: 5.7vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-span.titleCompanyOrtrosUnderline{
-	text-decoration: underline;
-}
-
-p.titleDurationOrtros{
-	margin-top: 0.7vw;
-	margin-left: 5.04vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-span.titleDurationOrtrosUnderline{
-	text-decoration: underline;
-}
-
-p.titleMissionsOrtros{
-	margin-top: 0.7vw;
-	margin-left: 4.38vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-	text-decoration: underline;
-}
-
-p.missionsOrtrosDescri{
-	margin-top: 0.7vw;
-	margin-left: 0vw;
-	margin-right: 1.41vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.ortrosDescri1{
-	margin-top: 0.04vw;
-	margin-left: 3.77vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.ortrosDescri2{
-	margin-top: 0.04vw;
-	margin-left: 3.29vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.ortrosDescri3{
-	margin-top: 0.04vw;
-	margin-left: 2.82vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.ortrosDescri4{
-	margin-top: 0.04vw;
-	margin-left: 2.35vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-/*fin ortros intership box*/
-
-
-
-/*début traxens intership box*/
-
-div.traxensInternBox{
-	display: flex;
-	flex-direction: row;
-	margin-top: 4.71vw;
-	width: 47.13vw;
-	height: 14.14vw;
-	border-radius: 0.32vw;
-	background-color: #72C9A6;
-}
-
-div.traxensLogoBox{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	width: 30%;
-	clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
-	border-top-left-radius: 0.32vw;
-	border-bottom-left-radius: 0.32vw;
-	border-bottom-right-radius: 0vw;
-	border-top-right-radius: 0.16vw;
-	background-color: #DBE8D4;
-}
-
-a.traxensButtonLogo{
-
-}
-
-img.traxensLogo{
-	display: flex;
-	width: 8.48vw;
-	height: 9.42vw;
-	margin-left: -1.41vw;
-}
-
-img.traxensLogo:hover{
-	rotate: 30deg;
-	behavior: smooth;
-	transition-duration: 0.6s;
-}
-
-img.traxensLogo::after{
-	rotate: 0deg;
-	behavior: smooth;
-	transition-duration: 0.6s;
-}
-
-div.traxensDescriBox{
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	width: 70%;
-	border-top-right-radius: 0.32vw;
-	border-bottom-right-radius: 0.32vw;
-	border-top-left-radius: 0vw;
-	border-bottom-left-radius: 0vw;
-	clip-path: polygon(9% 0%, 100% 0%, 100% 100%, 0% 100%);
-	background-color: #525E65;
-}
-
-p.titleCompanyTraxens{
-	margin-top: 1.41vw;
-	margin-left: 5.7vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-
-}
-
-span.titleCompanyTraxensUnderline{
-	text-decoration: underline;
-}
-
-p.titleDurationTraxens{
-	margin-top: 0.7vw;
-	margin-left: 5.04vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-span.titleDurationTraxensUnderline{
-	text-decoration: underline;
-}
-
-p.titleMissionsTraxens{
-	margin-top: 0.7vw;
-	margin-left: 4.38vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-	text-decoration: underline;
-}
-
-p.missionsTraxensDescri{
-	margin-top: 0.7vw;
-	margin-left: 0vw;
-	margin-right: 1.41vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.traxensDescri1{
-	margin-top: 0.04vw;
-	margin-left: 3.77vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.traxensDescri2{
-	margin-top: 0.04vw;
-	margin-left: 3.29vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.traxensDescri3{
-	margin-top: 0.04vw;
-	margin-left: 2.82vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.traxensDescri4{
-	margin-top: 0.04vw;
-	margin-left: 2.35vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-/*fin traxens intership box*/
-
-
-/*début alcineo intership box*/
-
-div.alcineoInternBox{
-	display: flex;
-	flex-direction: row;
-	margin-top: 4.71vw;
-	width: 47.13vw;
-	height: 14.14vw;
-	border-radius: 0.32vw;
-	background-color: #72C9A6;
-}
-
-div.alcineoLogoBox{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	width: 30%;
-	clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
-	border-top-left-radius: 0.32vw;
-	border-bottom-left-radius: 0.32vw;
-	border-bottom-right-radius: 0vw;
-	border-top-right-radius: 0.16vw;
-	background-color: #DBE8D4;
-}
-
-a.alcineoButtonLogo{
-
-}
-
-img.alcineoLogo{
-	display: flex;
-	width: 8.48vw;
-	height: 7.54vw;
-	margin-left: -2.35vw;
-}
-
-img.alcineoLogo:hover{
-	rotate: 41deg;
-	behavior: smooth;
-	transition-duration: 0.6s;
-}
-
-img.alcineoLogo::after{
-	rotate: 0deg;
-	behavior: smooth;
-	transition-duration: 0.6s;
-}
-
-div.alcineoDescriBox{
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	width: 70%;
-	border-top-right-radius: 0.32vw;
-	border-bottom-right-radius: 0.32vw;
-	border-top-left-radius: 0vw;
-	border-bottom-left-radius: 0vw;
-	clip-path: polygon(9% 0%, 100% 0%, 100% 100%, 0% 100%);
-	background-color: #525E65;
-}
-
-p.titleCompanyAlcineo{
-	margin-top: 1.41vw;
-	margin-left: 5.7vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-
-}
-
-span.titleCompanyAlcineoUnderline{
-	text-decoration: underline;
-}
-
-p.titleDurationAlcineo{
-	margin-top: 0.7vw;
-	margin-left: 5.04vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-span.titleDurationAlcineoUnderline{
-	text-decoration: underline;
-}
-
-p.titleMissionsAlcineo{
-	margin-top: 0.7vw;
-	margin-left: 4.38vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-	text-decoration: underline;
-}
-
-p.missionsAlcineoDescri{
-	margin-top: 0.7vw;
-	margin-left: 0vw;
-	margin-right: 1.41vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.alcineoDescri1{
-	margin-top: 0.04vw;
-	margin-left: 3.77vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.alcineoDescri2{
-	margin-top: 0.04vw;
-	margin-left: 3.29vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.alcineoDescri3{
-	margin-top: 0.04vw;
-	margin-left: 2.82vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.alcineoDescri4{
-	margin-top: 0.04vw;
-	margin-left: 2.35vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-/*fin alcineo intership box*/
-
-
-/*début LBC intership box*/
-
-div.LBCInternBox{
-	display: flex;
-	flex-direction: row;
-	margin-top: 4.71vw;
-	width: 47.13vw;
-	height: 14.14vw;
-	border-radius: 0.32vw;
-	background-color: #72C9A6;
-}
-
-div.LBCLogoBox{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	width: 30%;
-	clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
-	border-top-left-radius: 0.32vw;
-	border-bottom-left-radius: 0.32vw;
-	border-bottom-right-radius: 0vw;
-	border-top-right-radius: 0.16vw;
-	background-color: #DBE8D4;
-}
-
-a.LBCButtonLogo{
-
-}
-
-img.LBCLogo{
-	display: flex;
-	width: 8.01vw;
-	height: 8.01vw;
-	margin-left: -2.35vw;
-}
-
-img.LBCLogo:hover{
-	width: 6.83vw;
-	height: 6.83vw;
-	behavior: smooth;
-	transition-duration: 0.6s;
-}
-
-img.LBCLogo::after{
-/*	rotate: 0deg;*/
-	behavior: smooth;
-	transition-duration: 0.6s;
-}
-
-div.LBCDescriBox{
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	width: 70%;
-	border-top-right-radius: 0.32vw;
-	border-bottom-right-radius: 0.32vw;
-	border-top-left-radius: 0vw;
-	border-bottom-left-radius: 0vw;
-	clip-path: polygon(9% 0%, 100% 0%, 100% 100%, 0% 100%);
-	background-color: #525E65;
-}
-
-p.titleCompanyLBC{
-	margin-top: 1.41vw;
-	margin-left: 5.7vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-
-}
-
-span.titleCompanyLBCUnderline{
-	text-decoration: underline;
-}
-
-p.titleDurationLBC{
-	margin-top: 0.7vw;
-	margin-left: 5.04vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-span.titleDurationLBCUnderline{
-	text-decoration: underline;
-}
-
-p.titleMissionsLBC{
-	margin-top: 0.7vw;
-	margin-left: 4.38vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-	text-decoration: underline;
-}
-
-p.missionsLBCDescri{
-	margin-top: 0.7vw;
-	margin-left: 0vw;
-	margin-right: 1.41vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.LBCDescri1{
-	margin-top: 0.04vw;
-	margin-left: 3.77vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.LBCDescri2{
-	margin-top: 0.04vw;
-	margin-left: 3.29vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.LBCDescri3{
-	margin-top: 0.04vw;
-	margin-left: 2.82vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.LBCDescri4{
-	margin-top: 0.04vw;
-	margin-left: 2.35vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-/*fin LBC intership box*/
-
-
-/*début ILC intership box*/
-
-div.ILCInternBox{
-	display: flex;
-	flex-direction: row;
-	margin-top: 4.71vw;
-	width: 47.13vw;
-	height: 14.14vw;
-	border-radius: 0.32vw;
-	background-color: #72C9A6;
-}
-
-div.ILCLogoBox{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	width: 30%;
-	clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
-	border-top-left-radius: 0.32vw;
-	border-bottom-left-radius: 0.32vw;
-	border-bottom-right-radius: 0vw;
-	border-top-right-radius: 0.16vw;
-	background-color: #DBE8D4;
-}
-
-a.ILCButtonLogo{
-
-}
-
-img.ILCLogo{
-	display: flex;
-	width: 8.01vw;
-	height: 8.01vw;
-	margin-left: -2.35vw;
-}
-
-img.ILCLogo:hover{
-	width: 6.83vw;
-	height: 6.83vw;
-	behavior: smooth;
-	transition-duration: 0.6s;
-}
-
-img.ILCLogo::after{
-/*	rotate: 0deg;*/
-	behavior: smooth;
-	transition-duration: 0.6s;
-}
-
-div.ILCDescriBox{
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	width: 70%;
-	border-top-right-radius: 0.32vw;
-	border-bottom-right-radius: 0.32vw;
-	border-top-left-radius: 0vw;
-	border-bottom-left-radius: 0vw;
-	clip-path: polygon(9% 0%, 100% 0%, 100% 100%, 0% 100%);
-	background-color: #525E65;
-}
-
-p.titleCompanyILC{
-	margin-top: 1.41vw;
-	margin-left: 5.7vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-
-}
-
-span.titleCompanyILCUnderline{
-	text-decoration: underline;
-}
-
-p.titleDurationILC{
-	margin-top: 0.7vw;
-	margin-left: 5.04vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-span.titleDurationILCUnderline{
-	text-decoration: underline;
-}
-
-p.titleMissionsILC{
-	margin-top: 0.7vw;
-	margin-left: 4.38vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-	text-decoration: underline;
-}
-
-p.missionsILCDescri{
-	margin-top: 0.7vw;
-	margin-left: 0vw;
-	margin-right: 1.41vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.ILCDescri1{
-	margin-top: 0.04vw;
-	margin-left: 3.77vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.ILCDescri2{
-	margin-top: 0.04vw;
-	margin-left: 3.3vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.ILCDescri3{
-	margin-top: 0.04vw;
-	margin-left: 2.82vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.ILCDescri4{
-	margin-top: 0.04vw;
-	margin-left: 2.35vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-/*fin LBC intership box*/
-
-
 /*fin internship Box*/
-
 
 
 p.copyright{

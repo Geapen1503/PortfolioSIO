@@ -62,21 +62,14 @@
 
 
 				<div class="introTheoDiv">
-					<p class="introTheoText">
-						Etudiant en BTS SIO SLAM au lycée Bonaparte à Toulon, France | Baccalauréat SN RISC mention Très Bien | Web developer | Game developer<br><br>
-						Je suis passionné d'informatique depuis le collège, j'ai commencé la programmation en 2021. Je code principalement en C#, JS et PHP.
-
-					</p>
-
-					<!-- I've been in IT since middle school and I started programming in late 2021. I can transform nothingness into a remarkable App. I don't use tricks to make my work easier, I only use pure magic, like C#, JS, PHP and all other types of magic I need to finish the job.<br><br>
-						Programming is a strange kind of magic, but as you can see on this website, I can control this magic. On this website you can see the work I've made that makes me proud. -->
+					<p class="introTheoText"> Étudiant en <span class="highlightDiplomaText">BTS SIO SLAM</span> au lycée Bonaparte à Toulon, France | Baccalauréat <span class="highlightDiplomaText">SN RISC mention Très Bien</span> | Développeur web | Développeur de jeux<br><br> Je suis dans l'informatique depuis le collège et j'ai commencé à programmer fin 2021. Je peux transformer le néant en une application remarquable. Je ne m'appuie pas sur des raccourcis pour simplifier mon travail. J'utilise des technologies solides comme <span class="highlightDiplomaText">C#</span>, <span class="highlightDiplomaText">JS</span>, <span class="highlightDiplomaText">PHP</span>, et tous les outils nécessaires pour accomplir le travail de manière efficace.<br><br> La programmation est une discipline fascinante, et à travers ce site web, vous trouverez des projets qui mettent en valeur mes compétences et qui me rendent fier. </p>
 				</div>
 
 
 				<div class="projectBox" id="projets">
-					<h1 class="projectTitle">My Projects</h1>
+					<h1 class="projectTitle">Mes Projets</h1>
 					<hr class="projetUnderline">
-					<p class="projectDescri">These are the projects i'm proud of, click on it to have more information</p>
+					<p class="projectDescri">Voici les projets dont je suis fier, cliquez dessus pour en savoir plus.</p>
 					<div class="projectLogoBox">
 						<div class="projectTopBox">
 							<div class="lthBox">
@@ -138,11 +131,10 @@
 				<img id="floatingImage" class="floatingDiagonal" src="img/BrBadBearFinal.png" alt="Floating Image">
 
 
-
-				<div class="projectBoxPro" id="projetsPro">
-					<h1 class="projectTitlePro">Internship Projects</h1>
+				<!-- <div class="projectBoxPro" id="projetsPro">
+					<h1 class="projectTitlePro">Projets de stage</h1>
 					<hr class="projetUnderlinePro">
-					<p class="projectDescriPro">These are the projects I've made when I was an intern, click on it to have more information</p>
+					<p class="projectDescriPro">Voici les projets que j'ai réalisés lors de mon stage, cliquez dessus pour en savoir plus.</p>
 					<div class="projectLogoBoxPro">
 						<div class="projectTopBoxPro">
 							<div class="blogAIBoxPro">
@@ -163,7 +155,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
 
 			<div id="coursesBox">
@@ -200,125 +192,155 @@
 
 
 			<div id="internBox">
-					<h1 class="internTitle">8 Months of Internships</h1>
+
+				<div class="interBoxText">
+					<h1 class="internTitle">8 Mois de stages</h1>
 					<hr class="internUnderline">
-					<p class="internDescri">This is the internships I've done, click on it to have more information</p>
+					<p class="internDescri">Voici les stages que j'ai réalisés, cliquez dessus pour en savoir plus.</p>
+				</div>
 
-
-					<div class="ortrosInternBox" onclick="openPopup()">
-						<div class="ortrosLogoBox">
-							<a class="ortrosButtonLogo" target="_blank" href="https://www.ortros.fr/">
-								<img class="ortrosLogo" src="img/ortrosLogo.png">
+				<div class="openInternBox">
+					<div class="openInInternBox">
+						<div class="openInLogoBox">
+							<a class="openInButtonLogo" target="_blank" href="https://www.ortros.fr/">
+								<img class="openInSecondLogo" src="img/ortrosLogo.png">
 							</a>
 						</div>
-						<div class="ortrosDescriBox">
-							<p class="titleCompanyOrtros"><span class="titleCompanyOrtrosUnderline">The company:</span> Ortros</p>
-							<p class="titleDurationOrtros"><span class="titleDurationOrtrosUnderline">I worked here for:</span> 8 weeks</p>
-							<p class="titleMissionsOrtros">My missions:</p>
-							<p class="missionsOrtrosDescri">
-							<p class="ortrosDescri1">My mission was to develop a Node.JS API that generate</p>
-							<p class="ortrosDescri2">blog article automatically with AI. It'll generates article</p>
-							<p class="ortrosDescri3">with images, and with the WP plugin I've developed </p>
-							<p class="ortrosDescri4">with it, it will publish them on a schedule.</p>
+						<div class="openInDescriBox" onclick="openPopupOrtros()">
+							<p class="titleCompanyOpenIn"><span class="titleCompanyOpenInUnderline">The company:</span> Ortros</p>
+							<p class="titleDurationOpenIn"><span class="titleDurationOpenInUnderline">I worked here for:</span> 8 weeks</p>
+							<p class="titleMissionsOpenIn">My missions:</p>
+							<p class="missionsOpenInDescri">
+							<p class="openInDescri1">My mission was to develop a Node.JS API that generate</p>
+							<p class="openInDescri2">blog article automatically with AI. It'll generates article</p>
+							<p class="openInDescri3">with images, and with the WP plugin I've developed </p>
+							<p class="openInDescri4">with it, it will publish them on a schedule.</p>
 							</p>
 						</div>
 					</div>
 
-					<div id="popupOverlay" class="popupOverlay" onclick="closePopupOnClickOutside(event)">
+					<div id="popupOverlayOrtros" class="popupOverlayOrtros" onclick="closePopupOnClickOutsideOrtros(event)">
 						<div class="popupContent">
-							<span class="closeButton" onclick="closePopup()">&times;</span>
+							<span class="closeButton" onclick="closePopupOrtros()">&times;</span>
 							<h2>Details sur l'expérience chez Ortros</h2>
 							<p>Développement d'une API Node.JS pour générer automatiquement des articles de blog avec des images, et publication automatisée via un plugin WordPress.</p>
 
 						</div>
 					</div>
 
-
-					<div class="traxensInternBox">
-						<div class="traxensLogoBox">
-							<a class="traxensButtonLogo" target="_blank" href="https://www.traxens.com/">
-								<img class="traxensLogo" src="img/TraxensLogo.png">
+					<div class="openInInternBox">
+						<div class="openInLogoBox">
+							<a class="openInButtonLogo" target="_blank" href="https://www.itsystems.fr/">
+								<img class="openInThirdLogo" src="img/itsystems_logo.png">
 							</a>
 						</div>
-						<div class="traxensDescriBox">
-							<p class="titleCompanyTraxens"><span class="titleCompanyTraxensUnderline">The company:</span> Traxens</p>
-							<p class="titleDurationTraxens"><span class="titleDurationTraxensUnderline">I worked here for:</span> 4 weeks</p>
-							<p class="titleMissionsTraxens">My missions:</p>
-							<p class="missionsTraxensDescri">
-							<p class="traxensDescri1">My mission was to add the auto-calibration when a seal</p>
-							<p class="traxensDescri2">comes in the Seal Detection Sensor, the program</p>
-							<p class="traxensDescri3">was in C. When this was done, I made</p><p class="traxensDescri4">documentation for the SDS.</p>
+						<div class="openInDescriBox" onclick="openPopupITSystems()">
+							<p class="titleCompanyOpenIn"><span class="titleCompanyOpenInUnderline">The company:</span> ITSystems</p>
+							<p class="titleDurationOpenIn"><span class="titleDurationOpenInUnderline">I worked here for:</span> 5 weeks</p>
+							<p class="titleMissionsOpenIn">My missions:</p>
+							<p class="missionsOpenInDescri">
+							<p class="openInDescri1">My mission was to add features to the open-source</p>
+							<p class="openInDescri2">project RustDesk. I also developed a Python</p>
+							<p class="openInDescri3">executable that functioned like a PowerShell</p>
+							<p class="openInDescri4">tab with buttons to execute commands.</p>
 							</p>
 						</div>
 					</div>
-
-
-
-					<div class="alcineoInternBox">
-						<div class="alcineoLogoBox">
-							<a class="alcineoButtonLogo" target="_blank" href="https://www.alcineo.com/">
-								<img class="alcineoLogo" src="img/logoAlcineo.png">
-							</a>
-						</div>
-						<div class="alcineoDescriBox">
-							<p class="titleCompanyAlcineo"><span class="titleCompanyAlcineoUnderline">The company:</span> Alcineo</p>
-							<p class="titleDurationAlcineo"><span class="titleDurationAlcineoUnderline">I worked here for:</span> 3 weeks</p>
-							<p class="titleMissionsAlcineo">My missions:</p>
-							<p class="missionsAlcineoDescri">
-							<p class="alcineoDescri1">My mission was to code an android app that calculated</p><p class="alcineoDescri2">Fibonacci sequence and factorial N. I coded this app </p><p class="alcineoDescri3">in Kotlin. This app was like a calculator and there</p><p class="alcineoDescri4">were two buttons for fibonnaci and N.</p>
-							</p>
-						</div>
-					</div>
-
-
-
-					<div class="LBCInternBox">
-						<div class="LBCLogoBox">
-							<a class="LBCButtonLogo" target="_blank" href="https://www.bureauciotaden.fr/">
-								<img class="LBCLogo" src="img/logoLBC.png">
-							</a>
-						</div>
-						<div class="LBCDescriBox">
-							<p class="titleCompanyLBC"><span class="titleCompanyLBCUnderline">The company:</span> Le Bureau Ciotaden</p>
-							<p class="titleDurationLBC"><span class="titleDurationLBCUnderline">I worked here for:</span> 8 weeks</p>
-							<p class="titleMissionsLBC">My missions:</p>
-							<p class="missionsLBCDescri">
-							<p class="LBCDescri1">My mission was to repair computers, smartphones,</p><p class="LBCDescri2">and every other type of computers that the clients</p><p class="LBCDescri3">brought to us. I fix a lot of different stuff.</p><p class="LBCDescri4"></p>
-							</p>
-						</div>
-					</div>
-
-
-
-					<div class="ILCInternBox">
-						<div class="ILCLogoBox">
-							<a class="ILCButtonLogo" target="_blank" href="https://www.ilc13.com/">
-								<img class="ILCLogo" src="img/logoILC.png">
-							</a>
-						</div>
-						<div class="ILCDescriBox">
-							<p class="titleCompanyILC"><span class="titleCompanyILCUnderline">The company:</span> ILC</p>
-							<p class="titleDurationILC"><span class="titleDurationILCUnderline">I worked here for:</span> 4 weeks</p>
-							<p class="titleMissionsILC">My missions:</p>
-							<p class="missionsILCDescri">
-							<p class="ILCDescri1">My mission was to code a website in HTML and CSS.</p><p class="ILCDescri2">The website was one of the first website I've made.</p><p class="ILCDescri3"></p><p class="ILCDescri4"></p>
-							</p>
-						</div>
-					</div>
-
-
 				</div>
+
+				<div id="popupOverlayITSystems" class="popupOverlayITSystems" onclick="closePopupOnClickOutsideITSystems(event)">
+					<div class="popupContent">
+						<span class="closeButton" onclick="closePopupITSystems()">&times;</span>
+						<h2>Details sur l'expérience chez ITSystems</h2>
+						<p>Développement d'une </p>
+
+					</div>
+				</div>
+
+				<div class="closedInternBox">
+					<div class="closedInternInternBox">
+						<div class="closedInternLogoBox">
+							<a class="closedInternButtonLogo" target="_blank" href="https://www.alcineo.com/">
+								<img class="closedInternLogo" src="img/logoAlcineo.png">
+							</a>
+						</div>
+						<div class="closedInternDescriBox">
+							<p class="titleCompanyClosedIntern"><span class="titleCompanyClosedInternUnderline">The company:</span> Alcineo</p>
+							<p class="titleDurationClosedIntern"><span class="titleDurationClosedInternUnderline">I worked here for:</span> 3 weeks</p>
+							<p class="titleMissionsClosedIntern">My missions:</p>
+							<p class="missionsClosedInternDescri">
+							<p class="closedInternDescri1">My mission was to code an android app that calculated</p><p class="closedInternDescri2">Fibonacci sequence and factorial N. I coded this app </p><p class="closedInternDescri3">in Kotlin. This app was like a calculator and there</p><p class="closedInternDescri4">were two buttons for fibonnaci and N.</p>
+							</p>
+						</div>
+					</div>
+
+					<div class="closedInternInternBox">
+						<div class="closedInternLogoBox">
+							<a class="closedInternButtonLogo" target="_blank" href="https://www.bureauciotaden.fr/">
+								<img class="closedInternSecondLogo" src="img/logoLBC.png">
+							</a>
+						</div>
+						<div class="closedInternDescriBox">
+							<p class="titleCompanyClosedIntern"><span class="titleCompanyClosedInternUnderline">The company:</span> Le Bureau Ciotaden</p>
+							<p class="titleDurationClosedIntern"><span class="titleDurationClosedInternUnderline">I worked here for:</span> 8 weeks</p>
+							<p class="titleMissionsClosedIntern">My missions:</p>
+							<p class="missionsClosedInternDescri">
+							<p class="closedInternDescri1">My mission was to repair computers, smartphones,</p><p class="closedInternDescri2">and every other type of computers that the clients</p><p class="closedInternDescri3">brought to us. I fix a lot of different stuff.</p><p class="closedInternDescri4"></p>
+							</p>
+						</div>
+					</div>
+
+					<div class="closedInternInternBox">
+						<div class="closedInternLogoBox">
+							<a class="closedInternButtonLogo" target="_blank" href="https://www.ilc13.com/">
+								<img class="closedInternSecondLogo" src="img/logoILC.png">
+							</a>
+						</div>
+						<div class="closedInternDescriBox">
+							<p class="titleCompanyClosedIntern"><span class="titleCompanyClosedInternUnderline">The company:</span> ILC</p>
+							<p class="titleDurationClosedIntern"><span class="titleDurationClosedInternUnderline">I worked here for:</span> 4 weeks</p>
+							<p class="titleMissionsClosedIntern">My missions:</p>
+							<p class="missionsClosedInternDescri">
+							<p class="closedInternDescri1">My mission was to code a website in HTML and CSS.</p>
+							<p class="closedInternDescri2">The website was one of the first website I've made.</p>
+							<p class="closedInternDescri3"></p>
+							<p class="closedInternDescri4"></p>
+							</p>
+						</div>
+					</div>
+
+					<div class="closedInternInternBox">
+						<div class="closedInternLogoBox">
+							<a class="closedInternButtonLogo" target="_blank" href="https://www.traxens.com/">
+								<img class="openInLogo" src="img/TraxensLogo.png">
+							</a>
+						</div>
+						<div class="closedInternDescriBox">
+							<p class="titleCompanyClosedIntern"><span class="titleCompanyClosedInternUnderline">The company:</span> Traxens</p>
+							<p class="titleDurationClosedIntern"><span class="titleDurationClosedInternUnderline">I worked here for:</span> 4 weeks</p>
+							<p class="titleMissionsClosedIntern">My missions:</p>
+							<p class="missionsClosedInternDescri">
+							<p class="closedInternDescri1">My mission was to add the auto-calibration when a seal</p>
+							<p class="closedInternDescri2">comes in the Seal Detection Sensor, the program</p>
+							<p class="closedInternDescri3">was in C. When this was done, I made</p>
+							<p class="closedInternDescri4">documentation for the SDS.</p>
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
 		</div>
 
 
-	<!-- <div class="networkBox">
+	<div class="networkBox">
 		<a href="https://github.com/Geapen1503" target="_blank">
 			<img id="floatingGithubImage" class="floatingDiagonal" src="img/githubIco.png" alt="Floating Github">
 		</a>
 		<a href="https://www.linkedin.com/in/theo-gilabert-3a7a482ab/" target="_blank">
 			<img id="floatingLinkedinImage" class="floatingDiagonal" src="img/linkedinIco.png" alt="Floating Linkedin">
 		</a>
-	</div> -->
+	</div>
 
 	
 	<img class="backgroundFooter" src="img/footer-img.png">

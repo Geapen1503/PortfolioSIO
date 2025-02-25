@@ -158,19 +158,52 @@ function adjustFloatingImagePosition() {
 
 // beginning interships popup
 
-function openPopup() {
-    document.getElementById("popupOverlay").style.display = "flex";
+function openPopupITSystems() {
+    document.getElementById("popupOverlayITSystems").style.display = "flex";
 }
 
-function closePopup() {
-    document.getElementById("popupOverlay").style.display = "none";
+function closePopupITSystems() {
+    document.getElementById("popupOverlayITSystems").style.display = "none";
 }
 
-function closePopupOnClickOutside(event) {
-    if (event.target.id === "popupOverlay") closePopup();
+function closePopupOnClickOutsideITSystems(event) {
+    if (event.target.id === "popupOverlay") closePopupITSystems();
+}
+
+function openPopupOrtros() {
+    document.getElementById("popupOverlayOrtros").style.display = "flex";
+}
+
+function closePopupOrtros() {
+    document.getElementById("popupOverlayOrtros").style.display = "none";
+}
+
+function closePopupOnClickOutsideOrtros(event) {
+    if (event.target.id === "popupOverlay") closePopupOrtros();
 }
 
 // ending of interships popup
+
+// beginning closed internships
+
+document.querySelectorAll('.closedInternInternBox').forEach(box => {
+    box.addEventListener('click', function () {
+        document.querySelectorAll('.closedInternInternBox').forEach(otherBox => {
+            if (otherBox !== this) {
+                otherBox.classList.remove('expanded');
+            }
+        });
+        this.classList.toggle('expanded');
+    });
+
+    document.addEventListener('click', function (event) {
+        if (!box.contains(event.target)) {
+            box.classList.remove('expanded');
+        }
+    });
+});
+
+// ending closed internships
 
 
 // début code bouton du bas

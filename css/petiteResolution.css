@@ -795,7 +795,6 @@ a.blogAIDescriRedirectPro:hover {
 
 
 
-
 /*début internship Box*/
 
 div#internBox{
@@ -803,9 +802,34 @@ div#internBox{
 	flex-direction: column;
 	margin-top: -40vh;
 	width: 100%;
-	height: 440vh;
+	height: 400vh;
 	align-items: center;
-/*	background-color: hotpink;*/
+	/*	background-color: hotpink;*/
+}
+
+.interBoxText {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 8%;
+	align-items: center;
+}
+
+.openInternBox{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 42%;
+	align-items: center;
+}
+
+.closedInternBox{
+	display: flex;
+	flex-direction: column;
+	margin-top: -7vw;
+	width: 100%;
+	height: 50%;
+	align-items: center;
 }
 
 h1.internTitle{
@@ -830,10 +854,189 @@ p.internDescri{
 	font-size: 2.2vh;
 }
 
+/* début open intern box */
+
+div.openInInternBox{
+	display: flex;
+	flex-direction: column;
+	margin-top: 10vh;
+	width: 40vh;
+	height: 70vh;
+	border-radius: 0.7vh;
+	background-color: #72C9A6;
+}
+
+div.openInLogoBox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 35%;
+	width: 100%;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	border-top-left-radius: 0.35vh;
+	border-top-right-radius: 0.35vh;
+	border-bottom-left-radius: 0vh;
+	border-bottom-right-radius: 0vh;
+	background-color: #DBE8D4;
+}
+
+a.openInButtonLogo{
+
+}
+
+img.openInLogo{
+	display: flex;
+	width: 18vh;
+	height: 20vh;
+	margin-left: 0vh;
+}
+
+img.openInLogo:hover{
+	rotate: 0deg;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+img.openInLogo::after{
+	rotate: 0deg;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+img.openInSecondLogo{
+	display: flex;
+	width: 18vh;
+	height: 20vh;
+	margin-left: 0vh;
+}
+
+img.openInSecondLogo:hover{
+	width: 18vh;
+	height: 20vh;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+img.openInSecondLogo::after{
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+img.openInThirdLogo{
+	display: flex;
+	width: 18vh;
+	height: 18vh;
+	margin-left: 0vh;
+}
+
+img.openInThirdLogo:hover{
+	width: 18vh;
+	height: 18vh;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+img.openInThirdLogo::after{
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+div.openInDescriBox{
+	display: flex;
+	flex-direction: column;
+	height: 65%;
+	width: 100%;
+	border-top-left-radius: 0vh;
+	border-top-right-radius: 0vh;
+	border-bottom-right-radius: 0.35vh;
+	border-bottom-left-radius: 0.35vh;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	background-color: #525E65;
+}
+
+p.titleCompanyOpenIn{
+	margin-top: 5vh;
+	text-align: center;
+	margin-left: 0vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+
+}
+
+span.titleCompanyOpenInUnderline{
+	text-decoration: underline;
+}
+
+p.titleDurationOpenIn{
+	margin-top: 1.5vh;
+	margin-left: 0vh;
+	text-align: center;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+span.titleDurationOpenInUnderline{
+	text-decoration: underline;
+}
+
+p.titleMissionsOpenIn{
+	margin-top: 1.5vh;
+	margin-left: 0vh;
+	text-align: center;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+	text-decoration: underline;
+}
+
+p.missionsOpenInDescri{
+	margin-top: 1.5vh;
+	margin-left: 0vh;
+	margin-right: 3vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+p.openInDescri1{
+	text-align: center;
+	margin-top: 0.1vh;
+	margin-left: 0vh;
+	margin-right: 0vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+p.openInDescri2{
+	text-align: center;
+	margin-top: 0.1vh;
+	margin-left: 0vh;
+	margin-right: 0vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+p.openInDescri3{
+	text-align: center;
+	margin-top: 0.1vh;
+	margin-left: 0vh;
+	margin-right: 0vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+p.openInDescri4{
+	text-align: center;
+	margin-top: 0.1vh;
+	margin-left: 0vh;
+	margin-right: 0vh;
+	color: #DBE8D4;
+	font-size: 2.4vh;
+}
+
+/* fin open intern box */
 
 
 /*début ortros intern box*/
-
+/*
 div.ortrosInternBox{
 	display: flex;
 	flex-direction: column;
@@ -877,7 +1080,6 @@ img.ortrosLogo:hover{
 }
 
 img.ortrosLogo::after{
-/*	rotate: 0deg;*/
 	behavior: smooth;
 	transition-duration: 0.6s;
 }
@@ -971,13 +1173,11 @@ p.ortrosDescri4{
 	color: #DBE8D4;
 	font-size: 2.4vh;
 }
-
+*/
 /*fin ortros intern box*/
 
-
-
 /*début traxens intern box*/
-
+/*
 div.traxensInternBox{
 	display: flex;
 	flex-direction: column;
@@ -1115,13 +1315,12 @@ p.traxensDescri4{
 	color: #DBE8D4;
 	font-size: 2.4vh;
 }
-
+*/
 /*fin traxens intern box*/
 
+/* début closed intership boxes */
 
-/*début alcineo intern box*/
-
-div.alcineoInternBox{
+div.closedInternInternBox{
 	display: flex;
 	flex-direction: column;
 	margin-top: 10vh;
@@ -1131,7 +1330,39 @@ div.alcineoInternBox{
 	background-color: #72C9A6;
 }
 
-div.alcineoLogoBox{
+.closedInternInternBox:nth-child(n+2) {
+	margin-top: -50vh;
+}
+
+.closedInternInternBox.expanded {
+	margin-top: -48vh !important;
+	margin-bottom: 50vh !important;
+}
+
+.closedInternInternBox:first-child.expanded {
+	margin-top: 5vh !important;
+	margin-bottom: 50vh !important;
+}
+
+.closedInternInternBox:nth-child(1):hover {
+	margin-top: -50vh;
+	margin-bottom: 0;
+	transition-duration: 0.6s;
+}
+
+.closedInternInternBox:nth-child(2):hover{
+	margin-top: -50vh;
+	margin-bottom: 0;
+	transition-duration: 0.6s;
+}
+
+.closedInternInternBox:nth-child(3):hover,
+.closedInternInternBox:nth-child(4):hover{
+	margin-top: -50vh;
+	transition-duration: 0.6s;
+}
+
+div.closedInternLogoBox{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1145,30 +1376,49 @@ div.alcineoLogoBox{
 	background-color: #DBE8D4;
 }
 
-a.alcineoButtonLogo{
+a.closedInternButtonLogo{
 
 }
 
-img.alcineoLogo{
+img.closedInternLogo{
 	display: flex;
 	width: 18vh;
 	height: 16vh;
 	margin-left: 0vh;
 }
 
-img.alcineoLogo:hover{
+img.closedInternLogo:hover{
 	rotate: 0deg;
 	behavior: smooth;
 	transition-duration: 0.6s;
 }
 
-img.alcineoLogo::after{
+img.closedInternLogo::after{
 	rotate: 0deg;
 	behavior: smooth;
 	transition-duration: 0.6s;
 }
 
-div.alcineoDescriBox{
+.closedInternSecondLogo{
+	display: flex;
+	width: 16vh;
+	height: 16vh;
+	margin-left: 0vh;
+}
+
+.closedInternSecondLogo:hover{
+	width: 16vh;
+	height: 16vh;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+.closedInternSecondLogo::after{
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+div.closedInternDescriBox{
 	display: flex;
 	flex-direction: column;
 	height: 65%;
@@ -1181,7 +1431,7 @@ div.alcineoDescriBox{
 	background-color: #525E65;
 }
 
-p.titleCompanyAlcineo{
+p.titleCompanyClosedIntern{
 	margin-top: 5vh;
 	text-align: center;
 	margin-left: 0vh;
@@ -1190,11 +1440,11 @@ p.titleCompanyAlcineo{
 
 }
 
-span.titleCompanyAlcineoUnderline{
+span.titleCompanyClosedInternUnderline{
 	text-decoration: underline;
 }
 
-p.titleDurationAlcineo{
+p.titleDurationClosedIntern{
 	margin-top: 1.5vh;
 	margin-left: 0vh;
 	text-align: center;
@@ -1202,155 +1452,11 @@ p.titleDurationAlcineo{
 	font-size: 2.4vh;
 }
 
-span.titleDurationAlcineoUnderline{
+span.titleDurationClosedInternUnderline{
 	text-decoration: underline;
 }
 
-p.titleMissionsAlcineo{
-	margin-top: 1.5vh;
-	margin-left: 0vh;
-	text-align: center;
-	color: #DBE8D4;
-	font-size: 2.4vh;
-	text-decoration: underline;
-}
-
-p.missionsAlcineoDescri{
-	margin-top: 1.5vh;
-	margin-left: 0vh;
-	margin-right: 0vh;
-	color: #DBE8D4;
-	font-size: 2.4vh;
-}
-
-p.alcineoDescri1{
-	text-align: center;
-	margin-top: 0.1vh;
-	margin-left: 3vh;
-	margin-right: 3vh;
-	color: #DBE8D4;
-	font-size: 2.4vh;
-}
-
-p.alcineoDescri2{
-	text-align: center;
-	margin-top: 0.1vh;
-	margin-left: 3vh;
-	margin-right: 3vh;
-	color: #DBE8D4;
-	font-size: 2.4vh;
-}
-
-p.alcineoDescri3{
-	text-align: center;
-	margin-top: 0.1vh;
-	margin-left: 3vh;
-	margin-right: 3vh;
-	color: #DBE8D4;
-	font-size: 2.4vh;
-}
-
-p.alcineoDescri4{
-	text-align: center;
-	margin-top: 0.1vh;
-	margin-left: 3vh;
-	margin-right: 3vh;
-	color: #DBE8D4;
-	font-size: 2.4vh;
-}
-
-/*fin alcineo intern box*/
-
-
-/*début LBC intern box*/
-
-div.LBCInternBox{
-	display: flex;
-	flex-direction: column;
-	margin-top: 10vh;
-	width: 40vh;
-	height: 70vh;
-	border-radius: 0.7vh;
-	background-color: #72C9A6;
-}
-
-div.LBCLogoBox{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 35%;
-	width: 100%;
-	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-	border-top-left-radius: 0.35vh;
-	border-top-right-radius: 0.35vh;
-	border-bottom-left-radius: 0vh;
-	border-bottom-right-radius: 0vh;
-	background-color: #DBE8D4;
-}
-
-a.LBCButtonLogo{
-
-}
-
-img.LBCLogo{
-	display: flex;
-	width: 16vh;
-	height: 16vh;
-	margin-left: 0vh;
-}
-
-img.LBCLogo:hover{
-	width: 16vh;
-	height: 16vh;
-	behavior: smooth;
-	transition-duration: 0.6s;
-}
-
-img.LBCLogo::after{
-/*	rotate: 0deg;*/
-	behavior: smooth;
-	transition-duration: 0.6s;
-}
-
-div.LBCDescriBox{
-	display: flex;
-	flex-direction: column;
-	height: 65%;
-	width: 100%;
-	border-top-left-radius: 0vh;
-	border-top-right-radius: 0vh;
-	border-bottom-right-radius: 0.35vh;
-	border-bottom-left-radius: 0.35vh;
-	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-	background-color: #525E65;
-}
-
-p.titleCompanyLBC{
-	margin-top: 5vh;
-	text-align: center;
-	margin-left: 0vh;
-	color: #DBE8D4;
-	font-size: 2.4vh;
-
-}
-
-span.titleCompanyLBCUnderline{
-	text-decoration: underline;
-}
-
-p.titleDurationLBC{
-	margin-top: 1.5vh;
-	margin-left: 0vh;
-	text-align: center;
-	color: #DBE8D4;
-	font-size: 2.4vh;
-}
-
-span.titleDurationLBCUnderline{
-	text-decoration: underline;
-}
-
-p.titleMissionsLBC{
+p.titleMissionsClosedIntern{
 	margin-top: 1.5vh;
 	margin-left: 0vh;
 	text-align: center;
@@ -1359,7 +1465,7 @@ p.titleMissionsLBC{
 	text-decoration: underline;
 }
 
-p.missionsLBCDescri{
+p.missionsClosedInternDescri{
 	margin-top: 1.5vh;
 	margin-left: 0vh;
 	margin-right: 0vh;
@@ -1367,7 +1473,7 @@ p.missionsLBCDescri{
 	font-size: 2.4vh;
 }
 
-p.LBCDescri1{
+p.closedInternDescri1{
 	text-align: center;
 	margin-top: 0.1vh;
 	margin-left: 3vh;
@@ -1376,7 +1482,7 @@ p.LBCDescri1{
 	font-size: 2.4vh;
 }
 
-p.LBCDescri2{
+p.closedInternDescri2{
 	text-align: center;
 	margin-top: 0.1vh;
 	margin-left: 3vh;
@@ -1385,7 +1491,7 @@ p.LBCDescri2{
 	font-size: 2.4vh;
 }
 
-p.LBCDescri3{
+p.closedInternDescri3{
 	text-align: center;
 	margin-top: 0.1vh;
 	margin-left: 3vh;
@@ -1394,7 +1500,7 @@ p.LBCDescri3{
 	font-size: 2.4vh;
 }
 
-p.LBCDescri4{
+p.closedInternDescri4{
 	text-align: center;
 	margin-top: 0.1vh;
 	margin-left: 3vh;
@@ -1403,154 +1509,9 @@ p.LBCDescri4{
 	font-size: 2.4vh;
 }
 
-/*fin LBC intern box*/
-
-/*début ILC intern box*/
-
-div.ILCInternBox{
-	display: flex;
-	flex-direction: column;
-	margin-top: 10vh;
-	width: 40vh;
-	height: 70vh;
-	border-radius: 0.7vh;
-	background-color: #72C9A6;
-}
-
-div.ILCLogoBox{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 35%;
-	width: 100%;
-	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-	border-top-left-radius: 0.35vh;
-	border-top-right-radius: 0.35vh;
-	border-bottom-left-radius: 0vh;
-	border-bottom-right-radius: 0vh;
-	background-color: #DBE8D4;
-}
-
-a.ILCButtonLogo{
-
-}
-
-img.ILCLogo{
-	display: flex;
-	width: 16vh;
-	height: 16vh;
-	margin-left: 0vh;
-}
-
-img.ILCLogo:hover{
-	width: 16vh;
-	height: 16vh;
-	behavior: smooth;
-	transition-duration: 0.6s;
-}
-
-img.ILCLogo::after{
-/*	rotate: 0deg;*/
-	behavior: smooth;
-	transition-duration: 0.6s;
-}
-
-div.ILCDescriBox{
-	display: flex;
-	flex-direction: column;
-	height: 65%;
-	width: 100%;
-	border-top-left-radius: 0vh;
-	border-top-right-radius: 0vh;
-	border-bottom-right-radius: 0.35vh;
-	border-bottom-left-radius: 0.35vh;
-	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-	background-color: #525E65;
-}
-
-p.titleCompanyILC{
-	margin-top: 5vh;
-	text-align: center;
-	margin-left: 0vh;
-	color: #DBE8D4;
-	font-size: 2.4vh;
-
-}
-
-span.titleCompanyILCUnderline{
-	text-decoration: underline;
-}
-
-p.titleDurationILC{
-	margin-top: 1.5vh;
-	margin-left: 0vh;
-	text-align: center;
-	color: #DBE8D4;
-	font-size: 2.4vh;
-}
-
-span.titleDurationILCUnderline{
-	text-decoration: underline;
-}
-
-p.titleMissionsILC{
-	margin-top: 1.5vh;
-	margin-left: 0vh;
-	text-align: center;
-	color: #DBE8D4;
-	font-size: 2.4vh;
-	text-decoration: underline;
-}
-
-p.missionsILCDescri{
-	margin-top: 1.5vh;
-	margin-left: 0vh;
-	margin-right: 0vh;
-	color: #DBE8D4;
-	font-size: 2.4vh;
-}
-
-p.ILCDescri1{
-	text-align: center;
-	margin-top: 0.1vh;
-	margin-left: 3vh;
-	margin-right: 3vh;
-	color: #DBE8D4;
-	font-size: 2.4vh;
-}
-
-p.ILCDescri2{
-	text-align: center;
-	margin-top: 0.1vh;
-	margin-left: 3vh;
-	margin-right: 3vh;
-	color: #DBE8D4;
-	font-size: 2.4vh;
-}
-
-p.ILCDescri3{
-	text-align: center;
-	margin-top: 0.1vh;
-	margin-left: 3vh;
-	margin-right: 3vh;
-	color: #DBE8D4;
-	font-size: 2.4vh;
-}
-
-p.ILCDescri4{
-	text-align: center;
-	margin-top: 0.1vh;
-	margin-left: 3vh;
-	margin-right: 3vh;
-	color: #DBE8D4;
-	font-size: 2.4vh;
-}
-
-/*fin LBC intern box*/
-
+/* fin closed intership boxes */
 
 /*fin internship Box*/
-
 
 p.copyright{
 	font-size: 1.5vh;
