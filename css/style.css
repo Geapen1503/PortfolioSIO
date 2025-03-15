@@ -802,6 +802,14 @@ p.internDescri{
 
 /* début open intership box */
 
+/* Interships presentation Images */
+.internPresentationImg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
 div.openInInternBox{
 	display: flex;
 	flex-direction: row;
@@ -1166,7 +1174,6 @@ p.closedInternDescri4{
 	justify-content: center;
 	align-items: center;
 	z-index: 1000;
-	cursor: pointer;
 }
 
 .popupOverlayOrtros {
@@ -1180,6 +1187,9 @@ p.closedInternDescri4{
 	justify-content: center;
 	align-items: center;
 	z-index: 1000;
+}
+
+.openInDescriBox:hover {
 	cursor: pointer;
 }
 

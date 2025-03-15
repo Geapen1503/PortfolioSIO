@@ -62,7 +62,9 @@
 
 
 				<div class="introTheoDiv">
-					<p class="introTheoText"> Étudiant en <span class="highlightDiplomaText">BTS SIO SLAM</span> au lycée Bonaparte à Toulon, France | Baccalauréat <span class="highlightDiplomaText">SN RISC mention Très Bien</span> | Développeur web | Développeur de jeux<br><br> Je suis dans l'informatique depuis le collège et j'ai commencé à programmer fin 2021. Je peux transformer le néant en une application remarquable. Je ne m'appuie pas sur des raccourcis pour simplifier mon travail. J'utilise des technologies solides comme <span class="highlightDiplomaText">C#</span>, <span class="highlightDiplomaText">JS</span>, <span class="highlightDiplomaText">PHP</span>, et tous les outils nécessaires pour accomplir le travail de manière efficace.<br><br> La programmation est une discipline fascinante, et à travers ce site web, vous trouverez des projets qui mettent en valeur mes compétences et qui me rendent fier. </p>
+					<p class="introTheoText"> Étudiant en <span class="highlightDiplomaText">BTS SIO SLAM</span> au lycée Bonaparte à Toulon, France | Baccalauréat <span class="highlightDiplomaText">SN RISC mention Très Bien</span> | Développeur web | Développeur de jeux<br><br>
+						Je suis dans l'informatique depuis le collège et j'ai commencé à programmer fin 2021. Je peux transformer le néant en une application remarquable. Je ne m'appuie pas sur des raccourcis pour simplifier mon travail. J'utilise des technologies solides comme <span class="highlightDiplomaText">C#</span>, <span class="highlightDiplomaText">JS</span>, <span class="highlightDiplomaText">PHP</span>, et tous les outils nécessaires pour accomplir le travail de manière efficace.<br><br>
+						La programmation est une discipline fascinante, et à travers ce site web, vous trouverez des projets qui mettent en valeur mes compétences et qui me rendent fier. </p>
 				</div>
 
 
@@ -207,14 +209,14 @@
 							</a>
 						</div>
 						<div class="openInDescriBox" onclick="openPopupOrtros()">
-							<p class="titleCompanyOpenIn"><span class="titleCompanyOpenInUnderline">The company:</span> Ortros</p>
-							<p class="titleDurationOpenIn"><span class="titleDurationOpenInUnderline">I worked here for:</span> 8 weeks</p>
-							<p class="titleMissionsOpenIn">My missions:</p>
+							<p class="titleCompanyOpenIn"><span class="titleCompanyOpenInUnderline">L'entreprise:</span> Ortros</p>
+							<p class="titleDurationOpenIn"><span class="titleDurationOpenInUnderline">J'ai travaillé ici:</span> 8 semaines</p>
+							<p class="titleMissionsOpenIn">Mes missions:</p>
 							<p class="missionsOpenInDescri">
-							<p class="openInDescri1">My mission was to develop a Node.JS API that generate</p>
-							<p class="openInDescri2">blog article automatically with AI. It'll generates article</p>
-							<p class="openInDescri3">with images, and with the WP plugin I've developed </p>
-							<p class="openInDescri4">with it, it will publish them on a schedule.</p>
+							<p class="openInDescri1">Ma mission était de développer une API Node.JS qui </p>
+							<p class="openInDescri2">génère des articles de blog automatiquement avec l'IA. </p>
+							<p class="openInDescri3">Des articles avec images, avec le plugin WP que j'ai</p>
+							<p class="openInDescri4">développé, elle les publiera selon un planning.</p>
 							</p>
 						</div>
 					</div>
@@ -223,7 +225,141 @@
 						<div class="popupContent">
 							<span class="closeButton" onclick="closePopupOrtros()">&times;</span>
 							<h2>Details sur l'expérience chez Ortros</h2>
-							<p>Développement d'une API Node.JS pour générer automatiquement des articles de blog avec des images, et publication automatisée via un plugin WordPress.</p>
+							<br><br>
+							<p>L'objectif est de créer un plugin sur Wordpress permettant de générer des articles de blog de
+								manière complétement automatisée.
+								Il sera possible pour l'utilisateur, par le biais d'une interface créée à cet effet, de configurer ce
+								générateur d'articles. Les articles seront générés à l'aide de l'intelligence artificielle, que ce
+								soit pour les images ou pour le contenu. La génération sera faite à l'aide d'une API créé par
+								Ortros et utilisé par les services d'OpenAI.</p>
+
+							<br>
+							<p>Utilisation de Linear pour la gestion des tâches:</p>
+							<br>
+
+							<img class="internPresentationImg" src="img/imgInternships/Ortros/linearWPOrtros.png" sizes="(max-width: 300px) 60vw, 300px" >
+
+							<br>
+							<p>Développement d’un plugin WP en PHP simulant des appels à la future API:</p>
+							<br>
+
+							<img class="internPresentationImg" src="img/imgInternships/Ortros/WPPluginOrtros.png" sizes="(max-width: 300px) 60vw, 300px" >
+
+							<br>
+							<p>Pendant les premières semaines du stage, je me suis donc concentré sur le développement du
+								plugin WordPress. Ce plugin est d'apparence assez simpliste, il n'a que 3 champs. Un premier champ
+								"Interval" qui définira l'intervalle à laquelle le Cron Job exécutera la création de posts de blog.
+								Un second champ qui définira le sujet des posts, et une description qui détaillera le sujet des
+								posts pour que l'IA ait suffisamment de données pour faire des posts sur le sujet.</p>
+							<br>
+
+							<img class="internPresentationImg" src="img/imgInternships/Ortros/WPPostOrtros.png" sizes="(max-width: 300px) 60vw, 300px" >
+
+							<br>
+							<p>Pour que ce plugin puisse s'implémenter sur un maximum de sites WordPress, on insérera les
+								posts dans la table WP_POST créée automatiquement par WP. Après ça, la partie plugin était
+								finie, j'ai donc commencé à me former à Node.JS pour ensuite commencer le développement de l'API,
+								qui gérera la génération d'articles.</p>
+							<br>
+
+							<p>Pour l'API, j'ai initialisé un projet Node.JS avec Express et les dépendances nécessaires.
+								La première étape a été d’implémenter l’authentification JWT, qui génère un token utilisateur
+								contenant son nom et son mot de passe hashé. La clé de chiffrement est stockée dans un fichier .env
+								pour la sécurité. J'ai créé un middleware et des routes pour l’authentification : une route register
+								pour inscrire un utilisateur en vérifiant son existence et en hashant son mot de passe, et une route
+								login qui renvoie un token après validation des identifiants. Une base SQLite stocke les utilisateurs.</p>
+
+							<br>
+
+							<p>Pour tester, j’ai développé une interface HTML avec un script JavaScript qui envoie les données
+								aux routes et affiche les réponses. Ensuite, j’ai documenté les routes avec Swagger pour générer
+								automatiquement une documentation sur /api-docs.</p>
+
+							<br>
+							<img class="internPresentationImg" src="img/imgInternships/Ortros/swaggerBlogAIOrtros.png" sizes="(max-width: 300px) 60vw, 300px" >
+							<br>
+
+							<p>Enfin, j’ai commencé à implémenter les appels à l’API OpenAI pour générer du contenu,
+								avec une route generate dédiée.</p>
+
+							<br>
+							<p>J’ai créé une route generate pour transmettre un prompt à ChatGPT et générer un article
+								de blog avec images. Elle prend en paramètres le titre, la description, le nombre de tokens
+								et d’autres options.</p>
+							<br>
+
+							<img class="internPresentationImg" src="img/imgInternships/Ortros/switchModelBlogAIOrtros.png" sizes="(max-width: 300px) 60vw, 300px" >
+
+							<br>
+							<p>Un switch case permet de choisir le modèle ChatGPT et configure l’URL et les paramètres.
+								Une requête POST est ensuite envoyée avec la clé API. Si le nombre de tokens est trop bas,
+								une fonction supprime les phrases incomplètes.</p>
+							<br>
+
+							<img class="internPresentationImg" src="img/imgInternships/Ortros/clearSentenceAPIOtros.png" sizes="(max-width: 300px) 60vw, 300px" >
+
+							<br>
+							<p> Si includeImages est activé,
+								un prompt est envoyé à DALL·E pour générer une illustration, ajoutée ensuite à l’article.</p>
+
+							<br>
+							<img class="internPresentationImg" src="img/imgInternships/Ortros/codeToDalleBlogAIOrtros.png" sizes="(max-width: 300px) 60vw, 300px" >
+							<br>
+
+							<p>J’ai aussi mis en place un système de crédits. Une variable de session stocke le solde de l’utilisateur,
+								vérifiable via une route dédiée. Un système d’achats via Stripe a été ajouté, avec une route
+								products pour récupérer les offres et une route Webhook pour valider les paiements
+								et ajouter les crédits.</p>
+							<br>
+
+							<p>J’ai ajouté une route GET pour récupérer la liste des produits créés avec InitializeProducts.js, ce sera
+								utile à l'avenir pour afficher une boutique de crédits sur le front.</p>
+
+							<br>
+
+							<p>La route Webhook gère les paiements Stripe : elle récupère le nombre de crédits achetés et met
+								à jour la base de données utilisateur. J’ai ensuite ajouté un système de tags pour éviter de
+								générer des articles trop similaires. ChatGPT exclut les tags existants, mais cette méthode
+								consomme trop de tokens. Une future version utilisera des titres uniques à la place.</p>
+
+							<br>
+							<img class="internPresentationImg" src="img/imgInternships/Ortros/generateTagCodeOrtros.png" sizes="(max-width: 300px) 60vw, 300px" >
+							<br>
+
+							<p>Enfin, j’ai mis en place un calcul des tokens consommés pour estimer le coût de chaque requête.
+								Les images ont un coût fixe, tandis que le texte est analysé avec l'outil Tokenizer d’OpenAI pour un
+								calcul précis.</p>
+
+							<br>
+							<img class="internPresentationImg" src="img/imgInternships/Ortros/TokenizerPouletOrtros.png" sizes="(max-width: 300px) 60vw, 300px" >
+							<br>
+							<img class="internPresentationImg" src="img/imgInternships/Ortros/tokenizerAILanguageOrtros.png" sizes="(max-width: 300px) 60vw, 300px" >
+							<br>
+
+							<p>J’ai ajouté les routes get-me et generation
+								pour récupérer les infos utilisateur et la liste des articles générés.
+								Ensuite, j’ai conçu un système de clés API pour permettre l’authentification via login sur BlogAI
+								ou via clé API sur le plugin WP. Une table dédiée a été ajoutée, et chaque utilisateur reçoit
+								une clé unique à l’inscription.</p>
+
+							<br>
+
+							<p>Puis, j’ai intégré l’API dans WP en ajoutant un champ pour la clé API dans l’UI, et en modifiant
+								les requêtes pour fonctionner avec mon API. Les articles générés sont insérés dans wp_posts
+								et traités par WordPress via un Cron Job. Enfin, j’ai rédigé un document de passation en HTML
+								contenant les instructions et conseils pour les futurs développeurs.</p>
+
+							<br>
+							<img class="internPresentationImg" src="img/imgInternships/Ortros/blogAIFinalOrtros.png" sizes="(max-width: 300px) 60vw, 300px" >
+							<br>
+
+							<p>Ce stage a été très enrichissant pour moi. Je remercie toute l’équipe d’Ortros pour leur accueil
+								et pour le projet qu’ils m’ont donné. J’ai appris beaucoup en deux mois.
+								J’espère pouvoir travailler à nouveau avec eux.
+							</p>
+
+							<br><br><br><br><br><br>
+
 
 						</div>
 					</div>
@@ -235,14 +371,14 @@
 							</a>
 						</div>
 						<div class="openInDescriBox" onclick="openPopupITSystems()">
-							<p class="titleCompanyOpenIn"><span class="titleCompanyOpenInUnderline">The company:</span> ITSystems</p>
-							<p class="titleDurationOpenIn"><span class="titleDurationOpenInUnderline">I worked here for:</span> 5 weeks</p>
-							<p class="titleMissionsOpenIn">My missions:</p>
+							<p class="titleCompanyOpenIn"><span class="titleCompanyOpenInUnderline">L'entreprise:</span> ITSystems</p>
+							<p class="titleDurationOpenIn"><span class="titleDurationOpenInUnderline">J'ai travaillé ici:</span> 5 semaines</p>
+							<p class="titleMissionsOpenIn">Mes missions:</p>
 							<p class="missionsOpenInDescri">
-							<p class="openInDescri1">My mission was to add features to the open-source</p>
-							<p class="openInDescri2">project RustDesk. I also developed a Python</p>
-							<p class="openInDescri3">executable that functioned like a PowerShell</p>
-							<p class="openInDescri4">tab with buttons to execute commands.</p>
+							<p class="openInDescri1">Ma mission était d'ajouter des fonctionnalités au projet</p>
+							<p class="openInDescri2">open-source RustDesk. J'ai aussi développé un exe</p>
+							<p class="openInDescri3">Python qui fonctionnait comme un onglet PowerShell</p>
+							<p class="openInDescri4">avec des boutons pour exécuter des commandes.</p>
 							</p>
 						</div>
 					</div>
@@ -252,7 +388,150 @@
 					<div class="popupContent">
 						<span class="closeButton" onclick="closePopupITSystems()">&times;</span>
 						<h2>Details sur l'expérience chez ITSystems</h2>
-						<p>Développement d'une </p>
+
+						<br>
+
+						<p>ITSystems est une entreprise située dans la Zone Athélia
+							1 de La Ciotat. ITSystems fournit des ordinateurs "Kubb", fabriqués en Europe, pour
+							les professionnels, notamment les professionnels de santé, en proposant ces
+							ordinateurs avec des lecteurs de cartes de santé intégrés. Ils offrent également des
+							services de maintenance pour les parcs informatiques de leurs clients. </p>
+
+						<br>
+
+						<p>
+							L’entreprise ITSystems gère un large parc informatique à distance en
+							utilisant des logiciels comme AnyDesk. Le problème est qu’avec des licences
+							gratuites, il y a un temps d’attente entre chaque connexion, ce qui ralentit la
+							maintenance du parc informatique. Mon objectif est donc de créer un client
+							personnalisé de l’application Open Source RustDesk. Ce client devra porter le nom et
+							le logo de l’entreprise en remplacement de ceux de RustDesk. Il sera également
+							nécessaire de bloquer ou d’ajouter certains paramètres pour répondre aux besoins
+							spécifiques de l’entreprise.
+						</p>
+
+						<br>
+						<img class="internPresentationImg" src="img/imgInternships/ITSystems/ITSystemsDesk.png" sizes="(max-width: 300px) 60vw, 300px" >
+						<br>
+
+						<p>Une fois le projet RustDesk cloné localement, j’ai installé les dépendances nécessaires :
+							Visual Studio Build Tools, VCPKG et LLVM, puis j’ai configuré les variables d’environnement de Windows.
+							J’ai ensuite utilisé un script Python fourni pour compiler l’application, mais l’UI était absente à
+							cause de la bibliothèque Sciter, devenue obsolète.</p>
+
+						<br>
+						<p>J’ai donc opté pour Flutter, nécessitant l’envoi des modifications sur GitHub et l’exécution d’un workflow
+							pour générer un exécutable fonctionnel. Une fois cette étape réussie, j’ai exploré les options de
+							personnalisation du client.</p>
+
+						<br>
+						<img class="internPresentationImg" src="img/imgInternships/ITSystems/flutterNightlyBuild.png" sizes="(max-width: 300px) 60vw, 300px" >
+						<br>
+
+						<p>Pour automatiser cette personnalisation, j’ai utilisé RdGen, un outil web basé sur Django et des workflows
+							GitHub. Après plusieurs tentatives d’hébergement local échouées, j’ai déployé l’application sur une machine
+							virtuelle Debian via Proxmox. Avec cette infrastructure en place, j’ai pu tester et valider un premier client
+							RustDesk personnalisé.</p>
+
+						<br>
+						<img class="internPresentationImg" src="img/imgInternships/ITSystems/RdgenHome.png" sizes="(max-width: 300px) 60vw, 300px" >
+						<br>
+
+						<p>Malheureusement, cet outil en ligne (RdGen) ne me permettait pas d'ajouter des fonctionnalités
+							(mot de passe admin, ajout de paramètres...). J’ai donc dû modifier directement le code source de
+							RustDesk pour verrouiller certains paramètres, comme la découverte du réseau IP, en adaptant l’UI
+							développée avec Flutter.</p>
+						<br>
+						<p>En parallèle, la personnalisation du logo s’est avérée complexe. Le nom
+						"RustDesk" était disséminé dans de nombreux fichiers, et chaque modification nécessitait une recompilation
+						complète via les workflows github, un processus très long dépassant souvent une heure. </p>
+						<br>
+						<p>Pendant ces longues compilations, j’ai avancé sur un projet secondaire : une application .exe
+							facilitant la maintenance à distance via des commandes PowerShell automatisées.
+							L’objectif était de concevoir une interface avec des boutons correspondant à des commandes courantes,
+							tout en sécurisant l’accès par mot de passe.</p>
+
+						<br>
+						<img class="internPresentationImg" src="img/imgInternships/ITSystems/ClassePasswordPython.png" sizes="(max-width: 300px) 60vw, 300px" >
+						<br>
+
+						<p>J’ai choisi Python pour sa simplicité et sa compatibilité avec l’équipe de maintenance.
+							L’UI a été développée avec Tkinter et comprend deux classes principales : "PasswordPrompt"
+							pour l’écran de connexion et "ShellApp" pour l’interface principale. Pour sécuriser le mot de passe,
+							j’ai prévu de le stocker dans un fichier .env.</p>
+
+						<br>
+						<img class="internPresentationImg" src="img/imgInternships/ITSystems/ClasseShellPyhon.png" sizes="(max-width: 300px) 60vw, 300px" >
+						<br>
+
+						<p>Une fois le développement terminé, j’ai utilisé
+						PyInstaller pour compiler l’application en un exécutable portable, incluant toutes les ressources nécessaires.
+						L’objectif est d’avoir un outil léger et facile à utiliser sur n’importe quelle machine.</p>
+
+						<br>
+						<img class="internPresentationImg" src="img/imgInternships/ITSystems/ITSystemsDeskShellApp.png" sizes="(max-width: 300px) 60vw, 300px" >
+						<br>
+
+						<p>J’ai finalement abandonné la compilation via les workflows GitHub au profit d’une compilation Flutter
+							locale, plus rapide et maîtrisable, en utilisant des scripts PowerShell personnalisés. Cela me permet
+							d’éviter les contraintes des workflows distants et d’accélérer le processus.</p>
+						<br>
+						<p>Ainsi, j’ai pu compiler une version stable de RustDesk intégrant toutes mes modifications :
+							changement de nom, personnalisation de l’interface et sécurisation des paramètres avec une
+							boîte de dialogue protégée par mot de passe.</p>
+
+						<br>
+						<img class="internPresentationImg" src="img/imgInternships/ITSystems/PasswordITSystemsDesk.png" sizes="(max-width: 300px) 60vw, 300px" >
+						<br>
+
+						<p>Cependant, un nouveau besoin est apparu : certains clients nécessitent la découverte des IP sur le réseau.
+							Je vais donc réintégrer cette fonctionnalité (obsolète dans les versions de RustDesk que l'on utilise),
+							en la verrouillant derrière une protection par mot de passe.</p>
+						<br>
+						<p>En parallèle, j’ai documenté mon travail et mis en place un serveur de test RustDesk sur une machine
+							virtuelle Linux via Proxmox. Ce serveur inclut un Relay Server pour la gestion du flux vidéo et un S
+							ignaling Server pour l’identification des clients.</p>
+						<br>
+
+						<br>
+						<img class="internPresentationImg" src="img/imgInternships/ITSystems/RustDeskServerSchema.png" sizes="(max-width: 300px) 60vw, 300px" >
+						<br>
+
+						<p>Enfin, grâce aux dernières commandes PowerShell fournies par mon maître de stage, j’ai finalisé ITSTools.
+							L’application est désormais complète et prête à être testée sur différentes machines.</p>
+
+						<br>
+						<img class="internPresentationImg" src="img/imgInternships/ITSystems/PowerShellCommandsPython.png" sizes="(max-width: 300px) 60vw, 300px" >
+						<br>
+
+						<p>J’ai tenté de restaurer la découverte d’IP, mais cette option ne fonctionne pas sur RustDesk
+							v1.3.0. J’ai donc décidé de redévelopper cette option en affichant ou non sur le front, via flutter
+							en dart.</p>
+
+						<br>
+						<img class="internPresentationImg" src="img/imgInternships/ITSystems/DenyIPWidget1.png" sizes="(max-width: 300px) 60vw, 300px" >
+						<br>
+
+						<p>Pour la dernière semaine, j'ai finalisé le client RustDesk en corrigeant l'option DirectIP,
+							en ajoutant des classes Dart pour gérer la checkbox et l'affichage de l'option. J'ai également
+							terminé la documentation pour faciliter l'installation et l'utilisation du client.</p>
+						<br>
+
+						<br>
+						<img class="internPresentationImg" src="img/imgInternships/ITSystems/DenyIPWidget2.png" sizes="(max-width: 300px) 60vw, 300px" >
+						<br>
+
+						<p>J'ai codé les commandes PowerShell manquantes pour l'application Python ITSTools, permettant
+							d'installer et de configurer divers éléments sur Windows, comme la gestion des réseaux ou
+							l'installation de logiciels en quiet install.</p>
+						<br>
+						<p>La difficulté principale a été de tout finir avant la fin du stage tout en documentant correctement
+							les outils pour les autres collaborateurs.</p>
+						<br>
+						<p>En conclusion, ce stage m’a permis d’acquérir des compétences pratiques sur RustDesk et
+							l'automatisation avec Python, et je remercie l’équipe d'ITSystems pour leur accueil et leur soutien.</p>
+
+						<br><br><br><br><br>
 
 					</div>
 				</div>
