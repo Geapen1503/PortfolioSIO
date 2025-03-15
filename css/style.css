@@ -742,6 +742,66 @@ img.courseLogoPro {
 
 /* fin courses box */
 
+/* début AP box */
+
+div#APBox{
+	display: flex;
+	flex-direction: column;
+	margin-top: 3vh;
+	margin-bottom: 8vw;
+	width: 56.56vw;
+	height: 40vw;
+	align-items: center;
+	/*	background-color: hotpink;*/
+}
+
+h1.APTitle{
+	margin-top: 0.47vw;
+	color: #DBE8D4;
+	font-size: 2.35vw;
+}
+
+hr.APUnderline{
+	margin-top: 1.41vw;
+	width: 23.56vw;
+	height: 0.14vw;
+	border: none;
+	background-color: #525E65;
+}
+
+p.APDescri{
+	text-align: center;
+	margin-top: 1.88vw;
+	color: #485E81;
+	font-size: 1.03vw;
+}
+
+.APBoxContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 50vw;
+	height: 25vw;
+	align-items: center;
+	background-color: transparent;
+}
+
+div.APBoxPro {
+	display: flex;
+	width: 9.42vw;
+	height: 14.14vw;
+}
+
+img.APLogoPro {
+	display: flex;
+	width: 9vw;
+	height: 9vw;
+	border-radius: 50%;
+
+}
+
+/* fin AP box */
+
 /*début internship Box*/
 
 div#internBox{
