@@ -93,9 +93,6 @@ const btnDropJarod = document.querySelector(".bloc-top-jarod");
 const dropdownjarod = document.querySelector(".dropdownJarod");
 setupDropdown(btnDropJarod, dropdownjarod);
 
-const btnDropBlogAI = document.querySelector(".bloc-top-BlogAIPro");
-const dropdownBlogAI = document.querySelector(".dropdownBlogAIPro");
-setupDropdown(btnDropBlogAI, dropdownBlogAI);
 
 
 // ending of arrow code project
@@ -167,7 +164,7 @@ function closePopupITSystems() {
 }
 
 function closePopupOnClickOutsideITSystems(event) {
-    if (event.target.id === "popupOverlay") closePopupITSystems();
+    if (event.target.id === "popupOverlayITSystems") closePopupITSystems();
 }
 
 function openPopupOrtros() {
@@ -179,7 +176,7 @@ function closePopupOrtros() {
 }
 
 function closePopupOnClickOutsideOrtros(event) {
-    if (event.target.id === "popupOverlay") closePopupOrtros();
+    if (event.target.id === "popupOverlayOrtros") closePopupOrtros();
 }
 
 // ending of interships popup
