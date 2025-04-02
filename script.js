@@ -93,6 +93,9 @@ const btnDropJarod = document.querySelector(".bloc-top-jarod");
 const dropdownjarod = document.querySelector(".dropdownJarod");
 setupDropdown(btnDropJarod, dropdownjarod);
 
+const btnDropNPortfolio = document.querySelector(".bloc-top-nomadportfolio");
+const dropdownnportfolio = document.querySelector(".dropdownNomadPortfolio");
+setupDropdown(btnDropNPortfolio, dropdownnportfolio);
 
 
 // ending of arrow code project

@@ -359,10 +359,10 @@ div.projectBox {
 	display: flex;
 	flex-direction: column;
 	margin-top: 8vw;
-	width: 60vw;
+	width: 70vw;
 	height: 42.42vw;
 	align-items: center;
-	/* background-color: hotpink; */
+/*	background-color: hotpink;*/
 }
 
 h1.projectTitle {
@@ -391,25 +391,25 @@ div.projectLogoBox {
 	justify-content: space-around;
 	flex-direction: row;
 	margin-top: 2.35vw;
-	width: 45vw;
+	width: 55vw;
 	height: 21.21vw;
-	/* background-color: green; */
+/*	background-color: green;*/
 }
 
 .projectTopBox,
 .projectBottomBox {
 	display: flex;
-	width: 70%;
+	width: 50%;
 	height: 100%;
 	align-items: center;
 	justify-content: space-evenly;
 	flex-direction: row;
-	/* background-color: pink; */
+/*	background-color: pink;*/
 }
 
 .projectBottomBox {
-	width: 30%;
-	/* background-color: brown; */
+	width: 50%;
+/*	background-color: brown;*/
 }
 
 div.JarodBox {
@@ -422,7 +422,8 @@ div.JarodBox {
 }
 
 div.lthBox,
-div.AKBBox {
+div.AKBBox,
+div.NomadPortfolioBox {
 	display: flex;
 	flex-direction: column;
 	width: 9.42vw;
@@ -439,7 +440,8 @@ img.AKBLogo{
 }
 
 img.lthLogo,
-img.JarodLogo {
+img.JarodLogo,
+img.NomadPortfolioLogo {
 	display: flex;
 	width: 9.42vw;
 	height: 9.42vw;
@@ -448,13 +450,15 @@ img.JarodLogo {
 
 a.lthButton,
 a.AKBButton,
-a.JarodButton {
+a.JarodButton,
+a.NomadPortfolioButton {
 	z-index: 1;
 }
 
 .dropdownLth,
 .dropdownAkb,
-.dropdownJarod {
+.dropdownJarod,
+.dropdownNomadPortfolio {
 	max-width: 12.897158694830921vw;
 	height: 4.0626049888717395vw;
 	border-radius: 0.321vw;
@@ -466,7 +470,8 @@ a.JarodButton {
 
 .bloc-top-lth,
 .bloc-top-akb,
-.bloc-top-jarod {
+.bloc-top-jarod,
+.bloc-top-nomadportfolio {
 	padding: 1.2897158694830921vw;
 	display: block;
 	width: 100%;
@@ -485,7 +490,8 @@ a.JarodButton {
 
 img.arrowLth,
 img.arrowAkb,
-img.arrowJarod {
+img.arrowJarod,
+img.arrowNomadPortfolio {
 	margin-top: -1.649vw;
 	width: 4.71vw;
 	border-radius: 50%;
@@ -493,7 +499,8 @@ img.arrowJarod {
 
 .bloc-links-lth,
 .bloc-links-akb,
-.bloc-links-jarod {
+.bloc-links-jarod,
+.bloc-links-nomadportfolio {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -504,7 +511,8 @@ img.arrowJarod {
 
 p.lthDescri,
 p.akbDescri,
-p.jarodDescri {
+p.jarodDescri,
+p.nomadDescri {
 	margin-top: 0vw;
 	margin-bottom: 0.47vw;
 	color: white;
@@ -513,7 +521,8 @@ p.jarodDescri {
 
 a.lthDescriRedirect,
 a.akbDescriRedirect,
-a.jarodDescriRedirect {
+a.jarodDescriRedirect,
+a.nomadportfolioDescriRedirect {
 	display: flex;
 	font-size: 1.22vw;
 	font-weight: bold;
@@ -531,7 +540,8 @@ a.jarodDescriRedirect {
 
 a.lthDescriRedirect:hover,
 a.akbDescriRedirect:hover,
-a.jarodDescriRedirect:hover {
+a.jarodDescriRedirect:hover,
+a.nomadportfolioDescriRedirect:hover {
 	transition-duration: 600ms;
 	background-color: #72C9A6;
 }
