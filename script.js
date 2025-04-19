@@ -101,6 +101,37 @@ setupDropdown(btnDropNPortfolio, dropdownnportfolio);
 // ending of arrow code project
 
 
+// beginnning courses JS
+
+const courseImages = document.querySelectorAll('.courseLogoPro');
+const popupOverlay = document.getElementById('popupOverlay');
+const popupTitle = document.getElementById('popupTitle');
+const popupDescription = document.getElementById('popupDescription');
+const popupClose = document.querySelector('.popup-close');
+
+courseImages.forEach(img => {
+    img.addEventListener('click', () => {
+        const title = img.dataset.title;
+        const description = img.dataset.description;
+
+        popupTitle.textContent = title;
+        popupDescription.innerHTML = img.dataset.description;
+        popupOverlay.style.display = 'flex';
+    });
+});
+
+popupClose.addEventListener('click', () => {
+    popupOverlay.style.display = 'none';
+});
+
+popupOverlay.addEventListener('click', (e) => {
+    if (e.target === popupOverlay) {
+        popupOverlay.style.display = 'none';
+    }
+});
+
+// Ending courses JS
+
 
 // beginning of BrBad bear buoyancy
 
