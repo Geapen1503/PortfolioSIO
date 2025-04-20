@@ -103,7 +103,7 @@ setupDropdown(btnDropNPortfolio, dropdownnportfolio);
 
 // beginnning courses JS
 
-const courseImages = document.querySelectorAll('.courseLogoPro');
+const courseImages = document.querySelectorAll('.courseLogoPro, .APLogoPro');
 const popupOverlay = document.getElementById('popupOverlay');
 const popupTitle = document.getElementById('popupTitle');
 const popupDescription = document.getElementById('popupDescription');

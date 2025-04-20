@@ -848,6 +848,10 @@ div.APBoxPro {
 	height: 14.14vw;
 }
 
+div.APBoxPro:hover {
+	cursor: pointer;
+}
+
 img.APLogoPro {
 	display: flex;
 	width: 9vw;
